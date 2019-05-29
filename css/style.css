@@ -1,0 +1,49 @@
+/*  Go-Recipe CSS  */
+/* Copyrights 2019 */
+
+/*                  Flat Color                     */
+/* source : https://www.materialui.co/flatuicolors */
+    /* Light */
+.bg-green-light, .text-green-light {
+    background-color: #2ecc71;
+}
+.bg-blue-light, .text-blue-light {
+    background-color: #3498db;
+}
+.bg-yellow-light, .text-yellow-light {
+    background-color: #f1c40f;
+}
+.bg-orange-light, .text-orange-light {
+    background-color: #e67e22;
+}
+.bg-red-light, .text-red-light {
+    background-color: #e74c3c;
+}
+.bg-grey-light, .text-grey-light {
+    background-color: #ecf0f1;
+}
+.bg-dark-light, .text-dark-light {
+    background-color: #95a5a6;
+}
+    /* Dark */
+.bg-green-dark, .text-green-dark {
+    background-color: #27ae60;
+}
+.bg-blue-dark, .text-blue-dark {
+    background-color: #2980b9;
+}
+.bg-yellow-dark, .text-yellow-dark {
+    background-color: #f39c12;
+}
+.bg-orange-dark, .text-orange-dark {
+    background-color: #d35400;
+}
+.bg-red-dark, .text-red-dark {
+    background-color: #c0392b;
+}
+.bg-grey-dark, .text-grey-dark {
+    background-color: #bdc3c7;
+}
+.bg-dark-dark, .text-dark-dark {
+    background-color: #7f8c8d;
+}
