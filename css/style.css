@@ -1,49 +1,155 @@
-/*  Go-Recipe CSS  */
-/* Copyrights 2019 */
+/* ----------------------------------------------- */
+/*                  Go-Recipe CSS                  */
+/*                 Copyrights 2019                 */
+/* ----------------------------------------------- */
 
-/*                  Flat Color                     */
+/* ---------- Flat Colors ---------- */
 /* source : https://www.materialui.co/flatuicolors */
     /* Light */
-.bg-green-light, .text-green-light {
-    background-color: #2ecc71;
-}
-.bg-blue-light, .text-blue-light {
-    background-color: #3498db;
-}
-.bg-yellow-light, .text-yellow-light {
-    background-color: #f1c40f;
-}
-.bg-orange-light, .text-orange-light {
-    background-color: #e67e22;
-}
-.bg-red-light, .text-red-light {
-    background-color: #e74c3c;
-}
-.bg-grey-light, .text-grey-light {
-    background-color: #ecf0f1;
-}
-.bg-dark-light, .text-dark-light {
-    background-color: #95a5a6;
-}
+        /*
+        green : #2ecc71
+        blue  : #3498db
+        yellow: #f1c40f
+        orange: #e67e22
+        red   : #e74c3c
+        grey  : #ecf0f1
+        dark  : #95a5a6
+        */
     /* Dark */
-.bg-green-dark, .text-green-dark {
-    background-color: #27ae60;
+        /* 
+        green : #27ae60
+        blue  : #2980b9
+        yellow: #f39c12
+        orange: #d35400
+        red   : #c0392b
+        grey  : #bdc3c7
+        dark  : #7f8c8d 
+        */
+/* ---------- End Flat Colors ---------- */
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
 }
-.bg-blue-dark, .text-blue-dark {
-    background-color: #2980b9;
+@font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald.ttf);
 }
-.bg-yellow-dark, .text-yellow-dark {
-    background-color: #f39c12;
+* {
+    font-family: Roboto, sans-serif;
+    color: #333447;
+    line-height: 1.5;
 }
-.bg-orange-dark, .text-orange-dark {
-    background-color: #d35400;
+body {
+    margin: 0;
+    padding: 0;
 }
-.bg-red-dark, .text-red-dark {
-    background-color: #c0392b;
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
 }
-.bg-grey-dark, .text-grey-dark {
-    background-color: #bdc3c7;
+.footer {
+    text-align: center;
+    padding: 5px;
+    background: #c0392b;
+    color: #fff;
+    font-size: 12px;
 }
-.bg-dark-dark, .text-dark-dark {
-    background-color: #7f8c8d;
+
+/* ---------- Navbar ---------- */
+.header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.top-header {
+    position: relative;
+    background: #e74c3c;
+}
+.top-header img {
+    width: 140px;
+    margin: 14px 0px;
+}
+.bot-header {
+    width: 100%;
+    background: #c0392b;
+    overflow: auto;
+}
+.left-menu, .right-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+}
+.left-menu li, .right-menu li {
+    float: left;
+}
+.left-menu li a, .right-menu li a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.left-menu li a:hover, .right-menu li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.left-menu img {
+    display: none;
+    height: 24px;
+    margin-top: 8px;
+    margin-right: 10px;
+    float: left;
+}
+.right-menu {
+    float: right;
+}
+.right-menu i {
+    font-size: 16px;
+    color: #fff;
+}
+.right-menu form {
+    float: left;
+}
+.right-menu form input {
+    display: none;
+    border: none;
+    height: 52px;
+    background: rgb(247, 247, 247);
+    padding: 0px 10px;
+    font-size: 16px;
+}
+.active {
+    background: rgba(0, 0, 0, 0.2);
+}
+.scrollme {
+    position: fixed;
+    top: 0;
+}
+.scrollme .left-menu li a, .scrollme .right-menu li a {
+    font-size: 14px;
+    padding: 10px 14px;
+    transition: 0.5s;
+}
+.scrollme .right-menu form input {
+    height: 41px;
+    font-size: 12px;
+}
+.scrollme .right-menu i {
+    font-size: 14px;
+}
+/* ---------- End Navbar ---------- */
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  .top-header img {
+    margin-left: 10px;
+  }
 }
