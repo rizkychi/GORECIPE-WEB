@@ -16,9 +16,10 @@ $(document).ready(function(){
             $(".left-menu img").hide();
         }
     });
+
+    // show/hide search input
     $(".submit").click(function(){
         $("#frmsearch").fadeToggle(250);
-        
     });
     
     // adding class 'active' to navbar based on current page

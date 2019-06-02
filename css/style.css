@@ -71,6 +71,30 @@ body {
     width: 140px;
     margin: 14px 0px;
 }
+.top-header ul {
+    list-style-type: none;
+    float: right;
+}
+.top-header li {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 100%;
+    text-align: center;
+    background: #c0392b
+}
+.top-header li:hover {
+    transform: scale(1.25);
+    transition: 0.4s ease;
+}
+.top-header ul a {
+    font-size: 24px;
+}
+.top-header i {
+    vertical-align: middle;
+    color: #fff;
+}
 .bot-header {
     width: 100%;
     background: #c0392b;
@@ -96,7 +120,7 @@ body {
 }
 .left-menu li a:hover, .right-menu li a:hover {
     background: rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 .left-menu img {
     display: none;
