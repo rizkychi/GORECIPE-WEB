@@ -43,11 +43,18 @@
 body {
     margin: 0;
     padding: 0;
+    background: #e6ecf0;
 }
-
 .container {
     width: 1080px;
     margin: 0 auto;
+}
+.flex-grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+.col {
+    flex: 1;
 }
 .footer {
     text-align: center;
@@ -80,7 +87,6 @@ body {
     width: 40px;
     height: 40px;
     margin: 0 5px;
-    border-radius: 100%;
     text-align: center;
     background: #c0392b
 }
@@ -167,6 +173,30 @@ body {
     font-size: 14px;
 }
 /* ---------- End Navbar ---------- */
+/* ---------- Setting Profile ---------- */
+.sidebar, .profile {
+    background: #fff;
+    margin: 10px;
+    border: 0.1px solid #e6ecf0;
+}
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 0.1px solid #e6ecf0;
+    display: block;
+}
+.sidebar a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+.profile 
+
+/* ---------- End Setting Profile ---------- */
+
 
 @media screen and (max-width: 1080px) {
   .container {
