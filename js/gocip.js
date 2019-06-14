@@ -27,5 +27,29 @@ $(document).ready(function(){
     var title = document.title.substr(12);
     $(".left-menu li a:contains("+title+")").addClass("active");
     // ---------- End Navbar ---------- //
+
+    // ---------- Switch Page on Setting Profile ---------- //
+    // add animated zoom in on every pages
+    $(".profile").addClass("animated zoomIn faster");
+
+    // add click event on sidebar menu
+    $(".sidebar a").click(function(){
+        var getID = $(this).attr("id"); // get id from clicked sidebar 
+        var pages = "#"+getID+"Content"; 
+
+        // remove class active on all menu
+        $(".sidebar a").removeClass("active");
+
+        // add class active only on clicked menu
+        $(this).addClass("active");
+        
+        // hide all pages
+        $(".profile").hide();
+        
+        // show only pages selected
+        $(pages).show();
+    });
+    // ---------- End Switch Page ---------- //
+
 });
 
