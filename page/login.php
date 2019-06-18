@@ -5,18 +5,18 @@
     <input type="submit" value="Submit"><br><br>
 </form>
 </div>
-
 <?php
-    if (isset($_POST["user"])){
+    if (isset($_POST["user"]) && isset($_POST["pass"])){
         $username = $_POST["user"];
         $password = $_POST["pass"];
-
         
         if ($username == 'admin' && $password == '123') {
             $_SESSION["user"] = $username;
+            $_SESSION["login"] = true;
             
-            header("location:index.php");
+            header("Location: ?p=akun");
+        } else {
+            $_SESSION["login"] = false;
         }
     }
-
 ?>

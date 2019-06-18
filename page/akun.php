@@ -1,12 +1,22 @@
+<?php 
+    // check if not login
+    if ((!isset($_SESSION["login"])) || ($_SESSION["login"] == false)) {
+        header("Location: ?p=login");
+    }
+?>
+<script>
+    $(".breadcrumb").append("<span class='separator'></span>");
+    $(".breadcrumb").append("<a id='sub-breadcrumb'>Informasi Umum</a>")
+</script>
 <div class="container">
     <div class="flex-grid">
         <div class="col">
             <div class="sidebar animated zoomIn faster">
                 <div class="profile">
                     <div class="img-profile">
-                        <img src="img/user.jpg" alt="<?php echo $user ?>">
+                        <img src="img/user.jpg" alt="<?php echo $_SESSION["user"] ?>">
                     </div>
-                    <h4><?php echo $user ?></h4>
+                    <h4><?php echo $_SESSION["user"] ?></h4>
                     <div class="flex-grid">
                         <div class="col sub-info">Favorit 8</div>
                         <div class="col sub-info">Komentar 271</div>
@@ -176,7 +186,3 @@
         </div>
     </div>
 </div>
-<script>
-    $(".breadcrumb").append("<span class='separator'></span>");
-    $(".breadcrumb").append("<a id='sub-breadcrumb'>Informasi Umum</a>")
-</script>

@@ -4,13 +4,19 @@
 /* ----------------------------------------------- */
 
 $(document).ready(function(){
+    // ---------- Show/Hide Logout Menu ---------- //
+    if (isLogin == true) {
+        $("#logout").show();
+    } else {
+        $("#logout").hide();
+    }
+    // ---------- End Show/Hide Logout Menu ---------- //
+
     // ---------- Navbar ---------- //
     $(window).on("scroll",function(){
-        if ($(window).scrollTop()){
-            $(".top-header").animate({height:'hide'},350);
+        if ($(window).scrollTop()>=30){
             $(".bot-header").addClass("scrollme");
         } else {
-            $(".top-header").animate({height:'show'},350);
             $(".bot-header").removeClass("scrollme");
         }
     });

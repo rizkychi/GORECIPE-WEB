@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,16 +21,17 @@
 <body>
 <div class="page-container">
     
-<!-- Login Session -->
+<!-- Running Session -->
     <?php 
         session_start();
-        if (isset($_SESSION["user"])) {
-            $user = $_SESSION["user"];
+        
+        if (isset($_SESSION["login"])){
+            echo '<script>isLogin = '.$_SESSION["login"].';</script>';
         } else {
-            $user = "Masuk/Daftar";
+            echo '<script>isLogin = 0;</script>';
         }
     ?>
-<!-- End Login Session -->
+<!-- End Running Session -->
 
 <!-- Navbar -->
     <div class="header">
@@ -42,7 +44,18 @@
                     <a href="mailto:gocip@gmail.com" title="gocip@gmail.com"><i class="far fa-envelope"></i>gocip@gmail.com</a>
                 </div>
                 <div class="sub-menu">
-                    <a href="#"><i class="fas fa-user"></i><?php echo $user ?></a>
+                    <a href="?p=akun"><i class="fas fa-user"></i>
+                        <?php
+                            if (isset($_SESSION["login"]) && ($_SESSION["login"] == true)) {
+                                echo $_SESSION["user"];
+                            } else {
+                                echo "Masuk/Daftar";
+                            }
+                        ?>
+                    </a>
+                </div>
+                <div id="logout" class="sub-menu" style="display:none;">
+                    <a href="?p=logout"><i class="fas fa-sign-out-alt"></i>Keluar</a>
                 </div>
                 <ul>
                     <a href="#" title="Facebook"><li><i class="fab fa-facebook-f"></i></li></a>
@@ -55,17 +68,19 @@
                 </ul>
             </div>
         </div>
-        <div class="bot-header">
-            <div class="container">
-                <img src="img/brand_white.png" alt="Go-Recipe">
-                <ul class="right-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="index.php?p=resep">Resep</a></li>
-                    <li><a href="#">Artikel</a></li>
-                    <li><a href="#">Tentang</a></li>
-                    <li><a href="#">Kontak</a></li>
-                    <li><a href="javascript:void(0);" id="search"><i class="fas fa-search"></i></a></li>
-                </ul>
+        <div class="nav-cont">
+            <div class="bot-header">
+                <div class="container">
+                    <img src="img/brand_white.png" alt="Go-Recipe">
+                    <ul class="right-menu">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="?p=resep">Resep</a></li>
+                        <li><a href="#">Artikel</a></li>
+                        <li><a href="#">Tentang</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="javascript:void(0);" id="search"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -84,11 +99,16 @@
             if (isset($_GET["p"])) {
                 $page = $_GET["p"]; // get page name
 
+                // redirect to index if page is home
+                if ($page == "home") {
+                    header("Location: index.php");
+                }
+
                 // Get Page Title
                 $title = ucwords($page); // uppercase first letter
 
                 // ----- Breadcrumb ----- //
-                $bread = '<span class="separator"></span><a href="index.php?p='.$page.'">'.$title.'</a>';
+                $bread = '<span class="separator"></span><a href="?p='.$page.'">'.$title.'</a>';
 
                 echo '<div class="container">
                         <div class="breadcrumb">
@@ -108,7 +128,7 @@
                 include 'page/home.php';
                 $title = 'Home';
             }
-
+            
             // Change Page Title
             echo '<script>document.title += " | '.$title.'"</script>';
         ?>
@@ -144,3 +164,4 @@
 </div>
 </body>
 </html>
+<?php ob_end_flush();?>

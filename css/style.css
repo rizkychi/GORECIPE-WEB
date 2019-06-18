@@ -31,6 +31,9 @@
     font-family: Oswald;
     src: url(fonts/Oswald.ttf);
 }
+html {
+    scroll-behavior: smooth;
+}
 * {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -144,6 +147,9 @@ body {
     z-index: 99;
     position: relative;
 }
+.nav-cont {
+    height: 95px;
+}
 .top-header {
     position: relative;
     background: #c0392b;
@@ -216,7 +222,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    float: left;
+    float: right;
 }
 .right-menu li {
     float: left;
@@ -233,13 +239,6 @@ body {
 .right-menu li a:hover, .right-menu i:hover {
     color: rgba(255, 255, 255, 0.5) !important;
     transition: 0.5s ease;
-}
-.right-menu {
-    float: right;
-}
-.right-menu i {
-    font-size: 18px;
-    color: #fff;
 }
 .active {
     color: rgba(255, 255, 255, 0.5) !important;
@@ -296,16 +295,23 @@ body {
 }
 .search-close::before {
     content: '\2715';
-    color: #fff;
+    color: rgba(255,255,255,0.66);
     font-size: 3em;
     font-weight: bolder;
     position: absolute;
     top: 0;
     right: 0;
-    margin: 10px;
+    margin: 10px 30px;
     width: 64px;
-    height: 64px;
+    text-align: center;
     cursor: pointer;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+.search-close:hover::before {
+    transform: rotate(90deg);
+    transition: 0.5s;
+    color: #fff;
 }
 
 /* ---------- End Navbar ---------- */
