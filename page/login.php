@@ -1,9 +1,32 @@
-<div class="container">
-<form method="post"><br><br>
-    <input type="text" name="user" id=""><br>   
-    <input type="password" name="pass" id=""><br>
-    <input type="submit" value="Submit"><br><br>
-</form>
+<div class="container" id="login">
+	<div class="flex-grid">
+		<div class="col"></div>
+		<div class="col outer">
+			<div class="box animated zoomIn faster">
+				<form method="POST">
+					<div class="username">
+						<svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+							<path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8"/>
+						</svg>
+						<input type="text" name="user" placeholder="Username" class="user">
+					</div>
+					
+					<div class="password">
+						<svg class="login__icon svg-icon" viewBox="0 0 20 20">
+							<path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+						</svg>
+						<input type="password" name="pass" placeholder="Password" class="pass">
+					</div>
+					
+					<div class="button">
+						<input type="submit" name="login" value="Login" class="login">
+					</div>
+				</form>
+				<p class="register">Belum punya akun?<br><span style="font-size:18px;">Daftar <a href="?p=daftar">disini</a></span></p>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
 </div>
 <?php
     if (isset($_POST["user"]) && isset($_POST["pass"])){
@@ -16,7 +39,8 @@
             
             header("Location: ?p=akun");
         } else {
-            $_SESSION["login"] = false;
+			$_SESSION["login"] = false;
+			echo '<script>alert("Username/Password salah!");</script>';
         }
     }
 ?>

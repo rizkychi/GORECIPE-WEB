@@ -49,7 +49,7 @@
                     </div>
                     <div class="input-form">
                         <label for="gender">Jenis kelamin</label>
-                        <input type="radio" name="gender" checked>Laki-laki</input>
+                        <input type="radio" name="gender" checked>Laki-laki
                         <input type="radio" name="gender">Perempuan
                     </div>
                     <div class="input-form">

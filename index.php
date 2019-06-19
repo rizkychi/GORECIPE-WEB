@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
@@ -66,6 +67,30 @@
                     <a href="#" title="Instagram"><li><i class="fab fa-instagram"></i></li></a>
                     <a href="#" title="RSS"><li><i class="fas fa-rss"></i></li></a>
                 </ul>
+                <div class="language-selector">
+                    <div class="sub-menu" style="padding-right:0px">
+                        <a href="javascript:void(0);" id="language"><i class="fas fa-globe"></i>English (US)<i class="fas fa-angle-down" style="padding-left: 5px"></i></a>
+                    </div>
+                    <div class="list-language">
+                        <a href="#">Deutsch</a>
+                        <a href="#">Español</a>
+                        <a href="#">Français</a>
+                        <a href="#">हिंदी</a>
+                        <a href="#">Bahasa Indonesia</a>
+                        <a href="#">Italiano</a>
+                        <a href="#">日本語</a>
+                        <a href="#">한국어</a>
+                        <a href="#">Nederlands</a>
+                        <a href="#">Polski</a>
+                        <a href="#">Português</a>
+                        <a href="#">Português do Brasil</a>
+                        <a href="#">Русский</a>
+                        <a href="#">Türkçe</a>
+                        <a href="#">简体中文</a>
+                        <a href="#">中文 (香港)</a>
+                        <a href="#">繁體中文</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="nav-cont">
@@ -76,8 +101,9 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="?p=resep">Resep</a></li>
                         <li><a href="#">Artikel</a></li>
-                        <li><a href="#">Tentang</a></li>
+                        <li><a href="?p=tentang">Tentang</a></li>
                         <li><a href="#">Kontak</a></li>
+                        <li><a href="?p=bantuan">Bantuan</a></li>
                         <li><a href="javascript:void(0);" id="search"><i class="fas fa-search"></i></a></li>
                     </ul>
                 </div>
@@ -95,7 +121,7 @@
 <!-- Content -->
     <div class="content">
         <?php
-            // Switch Page
+            // ----------- Switch Page ----------- //
             if (isset($_GET["p"])) {
                 $page = $_GET["p"]; // get page name
 
@@ -104,33 +130,44 @@
                     header("Location: index.php");
                 }
 
-                // Get Page Title
-                $title = ucwords($page); // uppercase first letter
-
-                // ----- Breadcrumb ----- //
-                $bread = '<span class="separator"></span><a href="?p='.$page.'">'.$title.'</a>';
-
-                echo '<div class="container">
-                        <div class="breadcrumb">
-                            <a href="index.php"><i class="fas fa-home"></i></a>
-                            '.$bread.'
-                        </div>
-                    </div>';
-                // ----- End Breadcrumb ----- //
+                // get page title
+                $page_title = ucwords($page); // uppercase first letter
 
                 if (file_exists('page/'.$page.'.php')){
-                    include 'page/'.$page.'.php';
+                    if (isset($_GET["r"]) && $page == 'detail_resep') {
+                        // change page if page is detail_resep
+                        
+                        $recipe = $_GET["r"];
+                        // check if recipe file exist
+                        if (file_exists('page/recipe/'.$recipe.'.php')) {
+                            // include detail_resep and recipe file
+                            include 'page/recipe/'.$recipe.'.php';
+                            include 'page/'.$page.'.php';
+                            // change page title
+                            echo '<script>document.title += " | '.$title.'"</script>';
+                        } else {
+                            echo "Resep tidak ditemukan"; 
+                            // change page title
+                            echo '<script>document.title += " | Tidak Ditemukan"</script>';
+                        }
+                    } else {
+                        // change normal page
+                        include 'page/'.$page.'.php';
+                        // change page title
+                        echo '<script>document.title += " | '.$page_title.'"</script>';
+                    }
                 } else {
                     echo 'Halaman tidak ditemukan';
+                    // change page title
+                    echo '<script>document.title += " | Tidak Ditemukan"</script>';
                 }
-
             } else {
+                // default page
                 include 'page/home.php';
-                $title = 'Home';
+                // change page title
+                echo '<script>document.title += " | Home"</script>';
             }
-            
-            // Change Page Title
-            echo '<script>document.title += " | '.$title.'"</script>';
+            // ----------- End Switch Page ----------- //
         ?>
     </div>
 <!-- End Content -->
@@ -147,7 +184,8 @@
                 <li><a href="#" title="Terms of Service">Terms of Service</a></li>
             </ul>
             <hr>
-            <ul style="float:left">
+            <p>Copyright &copy; 2019 &ndash; <a href="#">Go-Recipe</a> All Right Reserved</p>
+            <ul style="float:right">
                 <a href="#" title="Facebook"><li><i class="fab fa-facebook-f"></i></li></a>
                 <a href="#" title="Twitter"><li><i class="fab fa-twitter"></i></li></a>
                 <a href="#" title="Behance"><li><i class="fab fa-behance"></i></li></a>
@@ -156,7 +194,7 @@
                 <a href="#" title="Instagram"><li><i class="fab fa-instagram"></i></li></a>
                 <a href="#" title="RSS"><li><i class="fas fa-rss"></i></li></a>
             </ul>
-            <p>Copyright &copy; 2019 &ndash; <a href="#">Go-Recipe</a> All Right Reserved</p>
+            
         </div>
     </div>
 <!-- End Footer -->
