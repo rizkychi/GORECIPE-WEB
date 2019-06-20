@@ -1278,7 +1278,8 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 .cat-title h1 {
     color: #fff;
-    margin-left: 50px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .cat-item {
@@ -1291,6 +1292,7 @@ input#img-4:checked~.dots label#img-dot-4 {
     flex-direction: row;
     justify-content: center;
     margin: 0;
+    padding:0;
 }
 
 .cat-item li {
@@ -1355,7 +1357,6 @@ input#img-4:checked~.dots label#img-dot-4 {
 .sub .btn-mail {
     border: 0;
     width: 550px;
-    height: 5px;
     border-radius: 15px;
     outline-width: 0;
     padding: 15px;
@@ -1363,7 +1364,8 @@ input#img-4:checked~.dots label#img-dot-4 {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    font-weight: 800;
+    font-weight:500;
+    font-size: 16px;
 }
 
 .sub .maile .btn-sub {

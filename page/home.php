@@ -135,7 +135,7 @@
                     <input name="subs" type="text" class="btn-mail" placeholder="Isikan alamat email Anda disini">
                     <br>
                     <br>
-                    <input type="submit" class="btn-sub" value="Subscribe">
+                    <input type="submit" class="btn" value="Subscribe">
                 </div>
                 <br><br><br><br><br></div>
         </div>
