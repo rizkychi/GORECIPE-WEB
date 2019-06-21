@@ -141,11 +141,11 @@ $(document).ready(function(){
         bread = '<a href="?p='+page_title+'">'+page_title+'</a>';
         bread += separator;
         bread += "<a id='sub-breadcrumb'>Informasi Umum</a>";
-    } else if ($(location).attr("search").contains("detail_resep")) { 
-        // if page is detail_resep
-        bread = '<a href="?p=resep">Resep</a>';
-        bread += separator;
-        bread += '<a>'+page_title+'</a>';
+    // } else if ($(location).attr("search").contains("detail_resep")) { 
+    //     // if page is detail_resep
+    //     bread = '<a href="?p=resep">Resep</a>';
+    //     bread += separator;
+    //     bread += '<a>'+page_title+'</a>';
     } else {
         //if page is normal
         bread = '<a href="?p='+page_title+'">'+page_title+'</a>';
