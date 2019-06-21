@@ -730,17 +730,17 @@ body {
 	-webkit-box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
 	box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
-	background: rgba(0, 0, 0, 0.8);
+	background: rgb(255, 255, 255);
 	padding: 20px;
     padding-top: 30px;
 }
 #login .username, #login .password{
 	margin: 20px;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid rgba(77, 76, 76, 0.9);
 	padding-bottom: 15px;
 }
 #login path {
-    stroke: rgba(255,255,255,0.9);
+    stroke: rgba(77, 76, 76, 0.9);
     fill: none;
     stroke-width: 1;
 }
@@ -792,12 +792,12 @@ body {
 	border: none;
 	background: transparent;
     width: 100%;
-    color: #fff;
+    color: rgba(77, 76, 76, 0.9);
     font-size: 16px;
 }
 #login p{
     font-size: 14px;
-	color: #fff;
+	color: rgba(77, 76, 76, 0.9);
 	text-align: center;
 }
 #login p a{
@@ -815,14 +815,14 @@ body {
 	-webkit-box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
 	box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
-	background: rgba(0, 0, 0, 0.8);
+	background: rgb(255, 255, 255);
 	padding: 20px;
 	width: 700px;
     overflow: auto;
 }
 #register .username, #register .password, #register .email{
 	margin: 20px;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid rgba(77, 76, 76, 0.9);
 	padding-bottom: 15px;
 }
 #register .title{
@@ -831,7 +831,7 @@ body {
 	text-align: center;
 	margin: 10px;
 	margin-bottom: 20px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.9);
 }
 #register .button{
 	text-align: center;
@@ -868,10 +868,10 @@ body {
 	border: none;
 	background: transparent;
     width: 100%;
-    color: #fff;
+    color: rgba(77, 76, 76, 0.9);
 }
 #register p {
-	color: #999;
+	color: rgba(77, 76, 76, 0.9);
 	text-align: center;
 }
 #register p a{
@@ -881,7 +881,7 @@ body {
 #register form{
 	float: left;
 	width: 60%;
-	border-right: 1px solid white;
+	border-right: 1px solid rgba(77, 76, 76, 0.9);
 }
 #register .sosmed{
 	float: right;
@@ -911,7 +911,7 @@ body {
 }
 #register .facebook, #register .twitter{
 	margin-bottom: 10px;
-	border:1px solid #999;
+	border:1px solid rgba(77, 76, 76, 0.9);
     border-radius: 20px;
     padding: 5px;
 }
