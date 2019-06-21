@@ -1,8 +1,5 @@
 absensi
 Rizky (OK)
 fian (OK)
-<<<<<<< HEAD
 anash (OKEE)
-=======
 tes
->>>>>>> ce1ceca5c370077891b6d80f88416fdc200e1721
