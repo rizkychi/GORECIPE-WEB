@@ -200,16 +200,27 @@ $(document).ready(function(){
 
 
     // ---------- HOMIE ---------- //
-    $(".cat-item li").mouseenter(function() {
-        $(this).children("a").children("img").animate({ width: "210px", height: "215px" }, 300);
-        $(this).children("a").children(".cat-name").fadeIn(200);
+    // $(".cat-item li").mouseenter(function() {
+    //     $(this).children("a").children("img").animate({ width: "210px", height: "215px" }, 300);
+    //     $(this).children("a").children(".cat-name").fadeIn(200);
 
+    // });
+
+    // $(".cat-item li").mouseleave(function() {
+    //     $(this).children("a").children("img").animate({ width: "200px", height: "200px" }, 300);
+    //     $(this).children("a").children(".cat-name").fadeOut(200);
+    // });
+
+    $(".cat-item li").mouseenter(function() {
+        $("img",this).addClass("img-hover");
+        $(".cat-name",this).css("visibility","visible");
     });
 
     $(".cat-item li").mouseleave(function() {
-        $(this).children("a").children("img").animate({ width: "200px", height: "200px" }, 300);
-        $(this).children("a").children(".cat-name").fadeOut(200);
+        $("img",this).removeClass("img-hover");
+        $(".cat-name",this).css("visibility","hidden");
     });
+
     // ---------- END HOMIE ---------- //
 
 });
