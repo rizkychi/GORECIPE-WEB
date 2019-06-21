@@ -102,7 +102,7 @@
                         <li><a href="?p=resep">Resep</a></li>
                         <li><a href="#">Artikel</a></li>
                         <li><a href="?p=tentang">Tentang</a></li>
-                        <li><a href="#">Kontak</a></li>
+                        <li><a href="?p=kontak">Kontak</a></li>
                         <li><a href="?p=bantuan">Bantuan</a></li>
                         <li><a href="javascript:void(0);" id="search"><i class="fas fa-search"></i></a></li>
                     </ul>
