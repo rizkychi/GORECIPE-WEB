@@ -730,17 +730,17 @@ body {
 	-webkit-box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
 	box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
-	background: rgba(0, 0, 0, 0.8);
+	background: rgb(255, 255, 255);
 	padding: 20px;
     padding-top: 30px;
 }
 #login .username, #login .password{
 	margin: 20px;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid rgba(77, 76, 76, 0.9);
 	padding-bottom: 15px;
 }
 #login path {
-    stroke: rgba(255,255,255,0.9);
+    stroke: rgba(77, 76, 76, 0.9);
     fill: none;
     stroke-width: 1;
 }
@@ -792,12 +792,12 @@ body {
 	border: none;
 	background: transparent;
     width: 100%;
-    color: #fff;
+    color: rgba(77, 76, 76, 0.9);
     font-size: 16px;
 }
 #login p{
     font-size: 14px;
-	color: #fff;
+	color: rgba(77, 76, 76, 0.9);
 	text-align: center;
 }
 #login p a{
@@ -815,14 +815,14 @@ body {
 	-webkit-box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
 	box-shadow: 5px 5px 19px 0px rgba(0,0,0,1);
-	background: rgba(0, 0, 0, 0.8);
+	background: rgb(255, 255, 255);
 	padding: 20px;
 	width: 700px;
     overflow: auto;
 }
 #register .username, #register .password, #register .email{
 	margin: 20px;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid rgba(77, 76, 76, 0.9);
 	padding-bottom: 15px;
 }
 #register .title{
@@ -831,7 +831,7 @@ body {
 	text-align: center;
 	margin: 10px;
 	margin-bottom: 20px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.9);
 }
 #register .button{
 	text-align: center;
@@ -868,10 +868,10 @@ body {
 	border: none;
 	background: transparent;
     width: 100%;
-    color: #fff;
+    color: rgba(77, 76, 76, 0.9);
 }
 #register p {
-	color: #999;
+	color: rgba(77, 76, 76, 0.9);
 	text-align: center;
 }
 #register p a{
@@ -881,7 +881,7 @@ body {
 #register form{
 	float: left;
 	width: 60%;
-	border-right: 1px solid white;
+	border-right: 1px solid rgba(77, 76, 76, 0.9);
 }
 #register .sosmed{
 	float: right;
@@ -911,7 +911,7 @@ body {
 }
 #register .facebook, #register .twitter{
 	margin-bottom: 10px;
-	border:1px solid #999;
+	border:1px solid rgba(77, 76, 76, 0.9);
     border-radius: 20px;
     padding: 5px;
 }
@@ -930,13 +930,14 @@ body {
     overflow: hidden;
 }
 #about .batas1 {
+    padding-top: 50px;
     display: block;
 }
 
 #about .konten-tentang {
     max-width: 1080px;
     margin: 0 auto;
-    height : 600px;
+    height : 550px;
 }
 
 #about .banner {
@@ -985,14 +986,14 @@ body {
 
 #about .batas2 {
     display : block;
-    margin-bottom: 53px;
+    margin-bottom: 30px;
     padding-top: 20px;
 }
 
 #about .konten-layanan {
     max-width: 1080px;
     margin: 0 auto;
-    height : 430px;
+    height : 450px;
 }
 
 #about .konten-layanan h2 {
@@ -1006,14 +1007,13 @@ body {
 #about .layanan1 {
     display: block;
     float : left;
-    width: 270px;
+    width: 280px;
     height : 250px;
-    margin: 20px;
-    padding: 20px;
+    padding: 50px 25px 80px;
     position: relative;
     margin-bottom: 30px;
     overflow : hidden;
-    background: linear-gradient( to left, white 50%,#d84949 50% );
+    background: linear-gradient( to left, white 50%,#e74c3c 50% );
 	background-size: 200% 100%;
 	background-position: right bottom;
     cursor: pointer;
@@ -1046,9 +1046,29 @@ body {
 }
 
 #about .icon-layanan{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+}
+
+#about .icon-layanan2{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top:0px;
+    left:100px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+
+#about .layanan1:hover .icon-layanan{
+    opacity: 0;
+}
+
+#about .layanan1:hover .icon-layanan2{
+    opacity: 1;
 }
 
 #about .layanan1:hover{
@@ -1086,7 +1106,6 @@ body {
     display: block;
     float: left;
     width: 190px;
-    margin: 10px;
     height : 330px;
     position: relative;
     margin-bottom: 30px;
@@ -1114,7 +1133,7 @@ body {
     transition: transform .5s ease-in-out;
     transform: scale(1.1);
     transform-origin: 90% 0;
-  }
+}
 
 #about .bayangan {
     position: absolute;
@@ -1131,13 +1150,64 @@ body {
 
 #about .foto:hover img {
     transform: scale(1.1) translateX(8%);
-    filter: alpha (opacity=0.3);
-    opacity: 0.5;
-  }
+}
 
 #about .foto:hover .bayangan {
-    opacity: 0.5;
-  }
+    opacity: 1;
+}
+
+#about .sosial {
+    width:100%;
+    height:40px;
+    opacity: 0;
+    padding-top:50%;
+    padding-bottom:50%;
+}
+
+#about .sosial ul{
+    padding-left:33px;
+}
+
+#about .sosial li{
+    display: inline-block;
+    padding : 0 2px;
+}
+
+#about .sosial a{
+    display: inline-block;
+    height: 35px;
+    width : 35px;
+}
+
+#about .icon-sosial{
+    position: relative;
+    top: 0;
+    left: 0;
+    width:30px;
+    height: 30px;
+}
+
+#about .icon-sosial2{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: -37px;;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+
+#about .sosial a:hover .icon-sosial{
+    opacity: 0;
+}
+
+#about .sosial a:hover .icon-sosial2{
+    opacity: 1;
+}
+
+#about .foto:hover .sosial {
+    opacity: 1;
+}
+
 /* ---------- End About Page ---------- */
 
 /* ---------- HOMIE --------- */
