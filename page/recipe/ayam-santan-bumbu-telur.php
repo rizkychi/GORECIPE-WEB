@@ -5,9 +5,9 @@
     $youtube = 'iWLNbpyYooM';
     $ingredient = array(
         '1/2 ekor ayam (potong 6 bagian, cuci bersih dan beri perasan jeruk nipis)',
+        '1 buah cabe merah besar (buang bijinya dan iris tipis serong)',
         '1 bungkus KOBE Bumbu Kalasan',
         '1 butir telur (kocok lepas)',
-        '1 buah cabe merah besar (buang bijinya dan iris tipis serong)',
         '1 batang serai (geprek)',
         '2 lembar daun salam',
         '2 lembar daun jeruk',
@@ -16,7 +16,7 @@
         '400 ml air',
         '5 sendok makan minyak goreng'
     );
-    $step = array(
+    $method = array(
         'Panaskan minyak. Tumis bumbu hingga harum.',
         'Masukkan ayam dan air. Aduk rata dan masak sampai ayam empuk.',
         'Tambahkan santan. Masak hingga air sedikit berkurang.',

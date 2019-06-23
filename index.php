@@ -14,6 +14,7 @@
     <title>Go-Recipe</title>
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
     <script src="js/tingle.min.js"></script>
     <script src="js/gocip.js"></script>
 </head>
