@@ -1,16 +1,23 @@
 /* ----------------------------------------------- */
 
+
 /*                  Go-Recipe CSS                  */
+
 
 /*                 Copyrights 2019                 */
 
+
 /* ----------------------------------------------- */
+
 
 /* ---------- Flat Colors ---------- */
 
+
 /* source : https://www.materialui.co/flatuicolors */
 
+
 /* Light */
+
 
 /*
         green : #2ecc71
@@ -22,7 +29,9 @@
         dark  : #95a5a6
         */
 
+
 /* Dark */
+
 
 /* 
         green : #27ae60
@@ -33,6 +42,7 @@
         grey  : #bdc3c7
         dark  : #7f8c8d 
         */
+
 
 /* ---------- End Flat Colors ---------- */
 
@@ -50,7 +60,12 @@ html {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
     font-weight: 300;
@@ -142,7 +157,8 @@ body {
     font-size: 14px;
 }
 
-.footer li a:hover, .footer p a:hover {
+.footer li a:hover,
+.footer p a:hover {
     color: #fff !important;
     transition: 0.5s;
 }
@@ -170,6 +186,7 @@ body {
     color: #fff;
     transition: 0.5s;
 }
+
 
 /* ---------- Navbar ---------- */
 
@@ -286,7 +303,8 @@ body {
     transition: 0.5s;
 }
 
-.right-menu li a:hover, .right-menu i:hover {
+.right-menu li a:hover,
+.right-menu i:hover {
     color: rgba(255, 255, 255, 0.5) !important;
     transition: 0.5s ease;
 }
@@ -376,6 +394,7 @@ body {
     color: #fff;
 }
 
+
 /* Dropdown Language Selector */
 
 .language-selector {
@@ -405,13 +424,17 @@ body {
     ;
 }
 
+
 /* End Dropdown */
+
 
 /* ---------- End Navbar ---------- */
 
+
 /* ---------- Setting Profile ---------- */
 
-.sidebar, .pages {
+.sidebar,
+.pages {
     background: #fff;
     margin: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
@@ -462,13 +485,15 @@ body {
     color: #333447;
 }
 
-.sidebar a:hover, .sidebar-selected {
+.sidebar a:hover,
+.sidebar-selected {
     color: #e74c3c !important;
     border-left: 4px solid #e74c3c;
     transition: 0.15s;
 }
 
-.sidebar a:hover i, .sidebar-selected i {
+.sidebar a:hover i,
+.sidebar-selected i {
     color: #e74c3c;
 }
 
@@ -554,7 +579,8 @@ body {
     transition: 0.4s all ease;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
     color: #fff;
     transition: 0.4s all ease;
     box-shadow: inset 0 -40px 0 0 #e74c3c;
@@ -639,7 +665,9 @@ body {
     margin: 0px;
 }
 
+
 /* ---------- End Setting Profile ---------- */
+
 
 /* ---------- Custom Tingle CSS ---------- */
 
@@ -655,7 +683,9 @@ body {
     padding: 1rem 1.5rem;
 }
 
+
 /* ---------- End Custom Tingle CSS ---------- */
+
 
 /* ---------- Detail Recipe Page ---------- */
 .btn-fav {
@@ -848,7 +878,9 @@ body {
     text-align: center;
 }
 
+
 /* ---------- End Detail Recipe Page ---------- */
+
 
 /* ---------- Login Page ---------- */
 
@@ -866,7 +898,9 @@ body {
     padding-top: 30px;
 }
 
-#login .username, #login .password {
+
+#login .username,
+#login .password {
     margin: 20px;
     border-bottom: 1px solid rgba(77, 76, 76, 0.9);
     padding-bottom: 15px;
@@ -922,7 +956,8 @@ body {
     background-color: #c0392b;
 }
 
-#login .user, #login .pass {
+#login .user,
+#login .pass {
     width: 70%;
     margin-left: 15px;
 }
@@ -947,7 +982,9 @@ body {
     text-decoration: none;
 }
 
+
 /* ---------- End Login Page ---------- */
+
 
 /* ---------- Register Page ---------- */
 
@@ -966,7 +1003,9 @@ body {
     overflow: auto;
 }
 
-#register .username, #register .password, #register .email {
+#register .username,
+#register .password,
+#register .email {
     margin: 20px;
     border-bottom: 1px solid rgba(77, 76, 76, 0.9);
     padding-bottom: 15px;
@@ -1009,7 +1048,9 @@ body {
     background-color: #c0392b;
 }
 
-#register .user, .pass, .e {
+#register .user,
+.pass,
+.e {
     width: 70%;
     margin-left: 15px;
 }
@@ -1057,33 +1098,51 @@ body {
 
 #register img {
     width: 30px;
-    margin: auto;
+    float: left;
 }
 
 #register .sosmed p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#register .sosmed .sos {
     padding: 5px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin: auto;
+    margin-top: -5px;
 }
 
-#register .facebook, #register .twitter {
+#register .facebook,
+#register .twitter {
     margin-bottom: 10px;
     border: 1px solid rgba(77, 76, 76, 0.9);
     border-radius: 20px;
     padding: 5px;
+    overflow: hidden;
 }
 
-#register .facebook:hover, #register .twitter:hover {
+#register .facebook:hover,
+#register .twitter:hover {
     cursor: pointer;
+    
+}
+
+#register .judul
+{
+  margin-top: 50px;
 }
 
 #register .log {
     margin: auto;
 }
 
+
 /* ---------- End Register Page ---------- */
+
 
 /* ---------- About Page ---------- */
 
@@ -1118,16 +1177,28 @@ body {
     border: 0;
 }
 
+@font-face {
+    font-family: BillyTheGangItalic;
+    src:url("fonts/BillyTheGangItalic.ttf");
+}
+
+
 #about .caption-banner {
     background-color: rgba(0, 0, 0, 0.8);
     bottom: 0;
-    color: white;
     left: 0;
-    padding: 5px 20px;
+    padding: 10px;
     position: absolute;
     width: 100%;
-    font-family: sans-serif;
-    font-size: 1.5em;
+}
+
+#about .caption-banner p{
+    font-family: BillyTheGangItalic;
+    font-size: 38px;
+    line-height: 0;
+    margin: 20px;
+    text-align: center;
+    color:#eee;
 }
 
 #about .caption2-banner {
@@ -1165,6 +1236,7 @@ body {
     font-size: 2.5em;
     margin: 0 0 15px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 #about .layanan1 {
@@ -1178,7 +1250,7 @@ body {
     overflow: hidden;
     background: linear-gradient( to left, white 50%, #e74c3c 50%);
     background-size: 200% 100%;
-    background-position: right bottom;
+    background-position: right;
     cursor: pointer;
     transition: all ease .3s;
 }
@@ -1235,7 +1307,7 @@ body {
 }
 
 #about .layanan1:hover {
-    background-position: left bottom;
+    background-position: left;
     color: white;
 }
 
@@ -1248,7 +1320,6 @@ body {
 }
 
 #about .batas3 {
-    padding-bottom: 50px;
     display: block;
 }
 
@@ -1264,6 +1335,7 @@ body {
     font-size: 2.5em;
     margin: 0 0 15px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 #about .tim1 {
@@ -1373,7 +1445,9 @@ body {
     opacity: 1;
 }
 
+
 /* ---------- End About Page ---------- */
+
 
 /* ---------- HOMIE --------- */
 
@@ -1407,6 +1481,39 @@ body {
     transform: scale(0);
     transition: opacity .5s ease-in-out;
     opacity: 0;
+}
+
+.slide-nav label {
+    height: 100%;
+    display: none;
+    opacity: 0;
+    width: 150px;
+    position: absolute;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #fff;
+    text-align: center;
+    font-size: 156pt;
+}
+
+.slide:hover+.slide-nav label {
+    opacity: 0.5;
+}
+
+.slide-nav label:hover {
+    opacity: 1;
+}
+
+.slide-nav .next {
+    right: 0;
+}
+
+.slide-nav .prev {
+    left: 0;
+}
+
+input:checked+.slide-container .slide-nav label {
+    display: block;
 }
 
 .slide img {
