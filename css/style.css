@@ -1412,14 +1412,13 @@ body {
     height: 100%;
     display: none;
     opacity: 0;
-    width: 200px;
+    width: 150px;
     position: absolute;
     cursor: pointer;
     transition: opacity .2s;
     color: #fff;
     text-align: center;
     font-size: 156pt;
-    font-family: "Varela Round", sans-serif;
 }
 
 .slide:hover+.slide-nav label {
@@ -1432,6 +1431,10 @@ body {
 
 .slide-nav .next {
     right: 0;
+}
+
+.slide-nav .prev {
+    left: 0;
 }
 
 input:checked+.slide-container .slide-nav label {
