@@ -1050,15 +1050,22 @@ body {
 
 #register img {
     width: 30px;
-    margin: auto;
+    float: left;
 }
 
 #register .sosmed p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#register .sosmed .sos {
     padding: 5px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin: auto;
+    margin-top: -5px;
 }
 
 #register .facebook,
@@ -1073,12 +1080,12 @@ body {
 #register .facebook:hover,
 #register .twitter:hover {
     cursor: pointer;
+    
 }
 
-#register .facebook p,
-#register .twitter p
+#register .judul
 {
-    display: none;
+  margin-top: 50px;
 }
 
 #register .log {

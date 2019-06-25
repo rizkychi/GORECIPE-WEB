@@ -30,19 +30,19 @@
 				</form>
 				
 				<div class="sosmed">
-					<p>ATAU</p>
+					<p class="judul">ATAU</p>
 					<div class="facebook">
 						<a href="">
 							<button>
 								<img src="img/facebook.png">
-								<p>Facebook</p>
+								<p class="sos">Facebook</p>
 							</button>
 						</a> 
 					</div>
 					<div class="twitter">
 						<button>
 							<img src="img/twitter.png">
-							<p>Twitter</p>
+							<p class="sos">Twitter</p>
 						</button>
 					</div>
 				</div>
