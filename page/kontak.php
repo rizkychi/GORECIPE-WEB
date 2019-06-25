@@ -1,5 +1,5 @@
 <div class="container" id="contact">
-    <div class="wrapper">
+    <div class="wrapper animated zoomIn faster">
         <h1>Kontak Kami</h1>
         <div class="contact-info">
             <div class="address">
