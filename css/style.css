@@ -1739,7 +1739,6 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
 /* ---------- END HOMIE --------- */
 
 /* ---------- Help page ---------- */
-
 #help-page * { 
     box-sizing: border-box;
 }
@@ -1924,6 +1923,114 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
 
 /* ---------- End Help page ---------- */
 
+/* ---------- Contact Page--------- */
+#contact {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#contact .wrapper {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #d84949;
+    color: white;
+    padding: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+#contact h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 35 px;
+}
+
+#contact .fas {
+    font-size: 30px;
+}
+
+#contact .contact-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.66);
+    margin-bottom: 25px;
+}
+
+#contact .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#contact .form-title{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact .input-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#contact .box-pesan{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contact .input input {
+    border: 0;
+    width: 260px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+#contact .pesan textarea {
+    width: 94%;
+    border: 0;
+    padding: 10px 20px;
+    outline: none;
+    height: 80px;
+}
+
+#contact .button{
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#contact .button:hover{
+    background: #fff;
+    color: #d84949;
+}
+
+#contact .social{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.66);
+
+}
+
+#contact .inner-social .fab{
+    margin: 0 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#contact .fab:hover{
+    color: #fff;
+}
+
+/* ---------- End Contact Page--------- */
+
 @media screen and (max-width: 1080px) {
     .container {
         width: 96%;
@@ -1931,5 +2038,19 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     }
     .top-header img {
         margin-left: 10px;
+    }
+    #contact .input-form,
+    #contact .contact-info,
+    #contact .social
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact .input:first-child input{
+        margin-bottom: 20px;
+    }
+    #contact .input input{
+        width: 94%
     }
 }
