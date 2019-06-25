@@ -101,7 +101,7 @@
                     <ul class="right-menu">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="?p=resep">Resep</a></li>
-                        <li><a href="#">Artikel</a></li>
+                        <li><a href="?p=artikel">Artikel</a></li>
                         <li><a href="?p=tentang">Tentang</a></li>
                         <li><a href="?p=kontak">Kontak</a></li>
                         <li><a href="?p=bantuan">Bantuan</a></li>
