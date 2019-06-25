@@ -1067,11 +1067,18 @@ body {
     border: 1px solid rgba(77, 76, 76, 0.9);
     border-radius: 20px;
     padding: 5px;
+    overflow: hidden;
 }
 
 #register .facebook:hover,
 #register .twitter:hover {
     cursor: pointer;
+}
+
+#register .facebook p,
+#register .twitter p
+{
+    display: none;
 }
 
 #register .log {

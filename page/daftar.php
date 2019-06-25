@@ -32,11 +32,18 @@
 				<div class="sosmed">
 					<p>ATAU</p>
 					<div class="facebook">
-						<a href=""><button><img src="img/facebook.png"><p>Facebook</p></button></a> 
+						<a href="">
+							<button>
+								<img src="img/facebook.png">
+								<p>Facebook</p>
+							</button>
+						</a> 
 					</div>
 					<div class="twitter">
-						
-						<button><img src="img/twitter.png"><p>Twitter</p></button>
+						<button>
+							<img src="img/twitter.png">
+							<p>Twitter</p>
+						</button>
 					</div>
 				</div>
 				<div class="log">
