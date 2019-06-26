@@ -1,49 +1,60 @@
 <div class="container" id="contact">
-	<div class="flex-grid">
-		<div class="col"></div>
-		<div class="col">
-			<div class="box animated zoomIn faster">
-				<div class="title">
-					<p>KONTAK KAMI</p>
-				</div>
-				<form action="">
+    <div class="wrapper animated zoomIn faster">
+        <h1>Kontak Kami</h1>
+        <div class="contact-info">
+            <div class="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> Jalan Prawirokuat No. 120D <br>
+                    Kec. Depok, Kab. Sleman, DIY</p>
+            </div>
 
-					<div class="username">
-						<input type="text" name="username" placeholder="Username">
-					</div>
+            <div class="phone">
+                <i class="fas fa-mobile-alt"></i>
+                <p>+62 123 33554</p>
+            </div>
+            
+            <div class="email">
+                <i class="fas fa-envelope-open-text" ></i>
+                <p>gocip@gmail.com</p>
+            </div>
+        </div>
 
-					<div class="email">
-						<input type="email" name="email" placeholder="Email">
-					</div>
+        <div class="form">
+            <div class="form-title">
+                Tinggalkan pesan untuk kami
+            </div>
 
-                    <div class="no-telp">
-                        <input type="number" name="phone" placeholder="Phone">
-                    </div>
+            <div class="input-form">
+                <div class="input">
+                    <input type="text" placeholder= "Nama Anda">
+                </div>
+                <div class="input">
+                    <input type="email" placeholder= "Email Anda">
+                </div>
+            </div>
 
-                    <div class="pesan">
-                        <textarea name="message" placeholder="Isi Pesan Anda.." ></textarea>
-                    </div>
+            <div class="box-pesan">
+                <div class="pesan">
+                    <textarea placeholder= "Isi Pesan Anda"></textarea>
+                </div>
+            </div>
 
-					<div class="button">
-						<input type="submit" name="send" value="Kirim" class="contact">
-					</div>
-				</form>
-				
-				<div class="contact-info">
-					<p>Informasi Kontak</p>
-					<div class="address">
-						<p><i class="fas fa-map-marker-alt"></i> Jalan Prawirokuat No. 120D, Depok, Sleman, DIY</p>
-					</div>
-					<div class="phone">
-						<p><i class="fas fa-mobile-alt"></i> +62 123 33554</p>
-					</div>
-					<div class="email">
-						<p><i class="fas fa-envelope-open-text"></i> gocip@gmail.com</p>
-					</div>
+            <div class="button">
+                Kirim Pesan
+            </div>
+        </div>
 
-				</div>
-			</div>
-		</div>
-		<div class="col"></div>
-	</div>
+        <div class="social">
+            <div class="inner-social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-behance"></i>
+            </div>
+            <div class="inner-social">
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
 </div>
