@@ -189,13 +189,13 @@ $(document).ready(function(){
                         '</div>'+
                     '</div>';
 
-        if (page_title == 'Bantuan') {
-            $("#your-account").prepend(full_bread);  
-        } else if (page_title == '') {
-
-        } else if (page_title != 'Login' && page_title != 'Daftar' && page_title != 'Home' && page_title != 'Kontak') {
-            $(".content").prepend(full_bread);
-        }
+        // if (page_title == 'Bantuan') {
+        //     $("#your-account").prepend(full_bread);  
+        // } else if ($(location).attr("search").contains("detail_resep")) {
+        //     $("#recipe-content").prepend(full_bread);
+        // } else if (page_title != 'Login' && page_title != 'Daftar' && page_title != 'Home' && page_title != 'Kontak') {
+        //     $(".content").prepend(full_bread);
+        // }
     // ---------- End Breadcrumb ---------- //
 
 
@@ -243,9 +243,15 @@ $(document).ready(function(){
                 }, 750);
             });
 
+            // Show info on hover 
+            $(".recipe-detail .nav div").hover(function(){
+                $("span",this).animate({'width': 'toggle'},350);
+            });
+
+
             // Add class 'active' to Nav
             $(window).on("scroll",function(){
-                if ($(window).scrollTop() > 10){
+                if ($(window).scrollTop() > 150){
                     $(".recipe-detail .nav").addClass("scrolled");
                 } else {
                     $(".recipe-detail .nav").removeClass("scrolled");
@@ -261,22 +267,22 @@ $(document).ready(function(){
                     if (index == 0) {
                         var next = $("#" + div[index+1] + "Recipe");
                         if (pos >= 0 && pos < next.offset().top) {
-                            $("#" + x + "Nav").addClass("actives");
+                            $("#" + x + "Nav i").addClass("actives");
                         } else {
-                            $("#" + x + "Nav").removeClass("actives");
+                            $("#" + x + "Nav i").removeClass("actives");
                         }
                     } else if (div.length - 1 != index && index != 0) {
                         var next = $("#" + div[index+1] + "Recipe");
                         if (pos >= id.offset().top && pos <= next.offset().top && !(pos < id.offset().top)) {
-                            $("#" + x + "Nav").addClass("actives");
+                            $("#" + x + "Nav i").addClass("actives");
                         } else {
-                            $("#" + x + "Nav").removeClass("actives");
+                            $("#" + x + "Nav i").removeClass("actives");
                         }
                     } else {
                         if (pos >= id.offset().top) {
-                            $("#" + x + "Nav").addClass("actives");
+                            $("#" + x + "Nav i").addClass("actives");
                         } else {
-                            $("#" + x + "Nav").removeClass("actives");
+                            $("#" + x + "Nav i").removeClass("actives");
                         }
                     }
                 });

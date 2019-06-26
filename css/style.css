@@ -95,7 +95,7 @@ body {
 .breadcrumb {
     background: rgba(0, 0, 0, 0.08);
     padding: 10px 20px;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .breadcrumb a {
@@ -695,8 +695,7 @@ body {
 }
 
 .right-detail {
-    margin-left: 30px;
-    border-left: 1px solid #999;
+    margin-left: 10px;
 }
 
 .right-detail .item {
@@ -721,6 +720,22 @@ body {
     clear: both;
     margin: 10px 0;
     overflow: hidden;
+}
+
+#recipe-content {
+    padding-right: 20px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+#recipe-content .info {
+    margin-top: 10px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#recipe-content .info i {
+    margin-right: 10px;
+    color: #e74c3c;
 }
 
 .recommend a {
@@ -753,6 +768,11 @@ body {
     ;
 }
 
+.recipe-detail .container-nav {
+    position: relative;
+    z-index: 1;
+}
+
 .recipe-detail .nav {
     position: fixed;
     margin-left: -70px;
@@ -761,29 +781,40 @@ body {
 }
 
 .recipe-detail .scrolled {
-    margin-top: -130px;
+    margin-top: -280px;
     transition: 0.5s;
 }
 
-.recipe-detail .nav div {
+.recipe-detail .nav  i {
     width: 50px;
     height: 50px;
     background: #c0392b;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.1s;
     font-size: 28px;
     color: #fff;
     text-align: center;
     line-height: 1.75;
 }
 
-.recipe-detail .nav div:hover {
+.recipe-detail .nav div i:hover {
     background: #e74c3c;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .recipe-detail .nav .actives {
     background: #e74c3c !important;
+}
+
+.recipe-detail .nav div span {
+    color: #fff;
+    font-size: 18px;
+    background: #e74c3c;
+    padding: 11.5px 20px;
+    z-index: 99;
+    position: fixed;
+    display: none;
+    white-space: nowrap;
 }
 
 .gocip-youtube {

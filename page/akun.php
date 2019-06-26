@@ -109,49 +109,49 @@
                     <div class="fav-item">
                         <img src="img/recipe/kroket-tahu.jpg" alt="Kroket Tahu">
                         <div class="fav-caption">
-                            <a href="#">Kroket Tahu</a>
+                            <a href="?p=detail_resep&r=kroket-tahu">Kroket Tahu</a>
                         </div>
                     </div>
                     <div class="fav-item">
                         <img src="img/recipe/ayam-santan-bumbu-telur.jpg" alt="Ayam Santan Bumbu Telur">
                         <div class="fav-caption">
-                            <a href="#">Ayam Santan Bumbu Telur</a>
+                            <a href="?p=detail_resep&r=ayam-santan-bumbu-telur">Ayam Santan Bumbu Telur</a>
                         </div>
                     </div>
                     <div class="fav-item">
                         <img src="img/recipe/bacem-ceker.jpg" alt="Bacem Ceker">
                         <div class="fav-caption">
-                            <a href="#">Bacem Ceker</a>
+                            <a href="?p=detail_resep&r=bacem-ceker">Bacem Ceker</a>
                         </div>
                     </div>
                     <div class="fav-item">
                         <img src="img/recipe/gudeg.jpg" alt="Gudeg">
                         <div class="fav-caption">
-                            <a href="#">Gudeg</a>
+                            <a href="?p=detail_resep&r=gudeg">Gudeg</a>
                         </div>
                     </div>
                     <div class="fav-item">
                         <img src="img/recipe/kembung-goreng-kremes.jpg" alt="Kembung Goreng Kremes">
                         <div class="fav-caption">
-                            <a href="#">Kembung Goreng Kremes</a>
+                            <a href="?p=detail_resep&r=kembung-goreng-kremes">Kembung Goreng Kremes</a>
                         </div>
                     </div>
                     <div class="fav-item">
                         <img src="img/recipe/cookies-choco-pandan.jpg" alt="Cookies Choco Pandan">
                         <div class="fav-caption">
-                            <a href="#">Cookies Choco Pandan</a>
+                            <a href="?p=detail_resep&r=cookies-choco-pandan">Cookies Choco Pandan</a>
                         </div>
                     </div>
                     <div class="fav-item">
                         <img src="img/recipe/seblak-creamy-mie-bakso.jpg" alt="Seblak Creamy Mie Bakso">
                         <div class="fav-caption">
-                            <a href="#">Seblak Creamy Mie Bakso</a>
+                            <a href="?p=detail_resep&r=seblak-creamy-mie-bakso">Seblak Creamy Mie Bakso</a>
                         </div>
                     </div>
                     <div class="fav-item">
                         <img src="img/recipe/oatpancakeluar.jpg" alt="Oat Pancake">
                         <div class="fav-caption">
-                            <a href="#">Oat Pancake</a>
+                            <a href="?p=detail_resep&r=oat-pancake">Oat Pancake</a>
                         </div>
                     </div>
                 </div>
