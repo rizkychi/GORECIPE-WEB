@@ -478,7 +478,7 @@
 
 
     <div class="bot-footer">
-        <div class="container">
+        <div class="container-foot">
             <h3>Need more help?</h3>
             <button type="submit"><i class='fas fa-phone'></i> Contact Us</button>
         </div>

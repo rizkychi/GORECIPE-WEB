@@ -167,7 +167,11 @@ $(document).ready(function(){
                         '</div>'+
                     '</div>';
 
-        if (page_title != 'Login' && page_title != 'Daftar' && page_title != 'Home') {
+        if (page_title == 'Bantuan') {
+            $("#your-account").prepend(full_bread);  
+        } else if (page_title == '') {
+
+        } else if (page_title != 'Login' && page_title != 'Daftar' && page_title != 'Home' && page_title != 'Kontak') {
             $(".content").prepend(full_bread);
         }
     // ---------- End Breadcrumb ---------- //

@@ -95,7 +95,7 @@ body {
 .breadcrumb {
     background: rgba(0, 0, 0, 0.08);
     padding: 10px 20px;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .breadcrumb a {
@@ -1743,6 +1743,10 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     box-sizing: border-box;
 }
 
+#help-page {
+    margin-top: -20px;
+}
+
 /* Slideshow */
 
 #help-page .mySlides {
@@ -1893,20 +1897,27 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
 }
 
 
-#help-page .bot-footer .container {
+#help-page .bot-footer .container-foot {
     width: 100%;
     background-image: url("/gocip/img/footer.png");
     background-size: cover;
     overflow: auto;
     text-align: center;
-    padding-bottom: 15px;
+    padding: 15px 0 25px 0;
 }
-#help-page .bot-footer .container h3, #help-page .bot-footer .container i {
+#help-page .bot-footer .container-foot h3, #help-page .bot-footer .container-foot i {
     color: white;
- 
 }
 
-#help-page .bot-footer .container button {
+#help-page .bot-footer .container-foot h3 {
+    font-weight: 400;
+    padding: 5px 0;
+}
+#help-page .bot-footer {
+    margin-bottom: -32px;
+}
+
+#help-page .bot-footer .container-foot button {
     border: none;
     border-radius: 5px;
     background-color: #e74c3c;
