@@ -688,34 +688,41 @@ body {
 
 
 /* ---------- Detail Recipe Page ---------- */
+
 .btn-fav {
     border-radius: 50px;
     width: 90%;
 }
+
 .right-detail {
     margin-left: 30px;
     border-left: 1px solid #999;
 }
+
 .right-detail .item {
     margin-left: 10px;
     overflow: hidden;
 }
+
 .right-detail .item img {
     width: 100px;
     height: 70px;
     float: left;
     margin-right: 10px;
 }
+
 .right-detail h3 {
     font-weight: 400;
     margin: 10px 0;
 }
+
 .right-detail .recommend {
     cursor: pointer;
     clear: both;
     margin: 10px 0;
     overflow: hidden;
 }
+
 .recommend a {
     text-decoration: none;
     color: #2B2B2C;
@@ -831,7 +838,10 @@ body {
     cursor: pointer;
 }
 
-#videoRecipe, #titleRecipe, #methodRecipe, #ingredientRecipe {
+#videoRecipe,
+#titleRecipe,
+#methodRecipe,
+#ingredientRecipe {
     overflow: hidden;
 }
 
@@ -897,7 +907,6 @@ body {
     padding: 20px;
     padding-top: 30px;
 }
-
 
 #login .username,
 #login .password {
@@ -1177,9 +1186,8 @@ body {
 
 @font-face {
     font-family: BillyTheGangItalic;
-    src:url("fonts/BillyTheGangItalic.ttf");
+    src: url("fonts/BillyTheGangItalic.ttf");
 }
-
 
 #about .caption-banner {
     background-color: rgba(0, 0, 0, 0.8);
@@ -1190,13 +1198,13 @@ body {
     width: 100%;
 }
 
-#about .caption-banner p{
+#about .caption-banner p {
     font-family: BillyTheGangItalic;
     font-size: 38px;
     line-height: 0;
     margin: 20px;
     text-align: center;
-    color:#eee;
+    color: #eee;
 }
 
 #about .caption2-banner {
@@ -1554,7 +1562,10 @@ input:checked+.slide-container .slide {
     background-color: rgba(245, 241, 241, 0.8);
 }
 
-input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-dot-2, input#img-3:checked~.dots label#img-dot-3, input#img-4:checked~.dots label#img-dot-4 {
+input#img-1:checked~.dots label#img-dot-1,
+input#img-2:checked~.dots label#img-dot-2,
+input#img-3:checked~.dots label#img-dot-3,
+input#img-4:checked~.dots label#img-dot-4 {
     background: rgba(245, 241, 241, 0.8);
 }
 
@@ -1734,12 +1745,27 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     margin-right: auto;
 }
 
+
 /* ---------- END HOMIE --------- */
 
+
+/* ---------- RESEP PAGE --------- */
+
+.resep-container {
+    background: #fff;
+    margin: 0 auto;
+}
+
+
+/* ---------- END RESEP PAGE --------- */
+
+
 /* ---------- Help page ---------- */
-#help-page * { 
+
+#help-page * {
     box-sizing: border-box;
 }
+
 
 /* Slideshow */
 
@@ -1751,6 +1777,7 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     margin-top: -300px;
 }
 
+
 /* Slideshow container */
 
 #help-page .slideshow-container {
@@ -1761,6 +1788,7 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     margin: auto;
     display: inline-block;
 }
+
 
 /* Fading animation */
 
@@ -1788,6 +1816,7 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
         opacity: 1
     }
 }
+
 
 /* Search box */
 
@@ -1831,7 +1860,8 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     display: table;
 }
 
-#help-page .help-category, #help-page .sub-help-category {
+#help-page .help-category,
+#help-page .sub-help-category {
     float: left;
     width: 30%;
     margin-left: 25px;
@@ -1866,11 +1896,13 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     text-decoration: none;
 }
 
-#help-page #your-account .sub-help-category h4, #help-page #your-account .sub-help-category h4 i {
+#help-page #your-account .sub-help-category h4,
+#help-page #your-account .sub-help-category h4 i {
     color: #e74c3c;
 }
 
-#help-page #search-discover .sub-help-category h4, #help-page #search-discover .sub-help-category h4 i {
+#help-page #search-discover .sub-help-category h4,
+#help-page #search-discover .sub-help-category h4 i {
     color: #3498db;
 }
 
@@ -1890,7 +1922,6 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     color: #e74c3c;
 }
 
-
 #help-page .bot-footer .container {
     width: 100%;
     background-image: url("/gocip/img/footer.png");
@@ -1899,9 +1930,10 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     text-align: center;
     padding-bottom: 15px;
 }
-#help-page .bot-footer .container h3, #help-page .bot-footer .container i {
+
+#help-page .bot-footer .container h3,
+#help-page .bot-footer .container i {
     color: white;
- 
 }
 
 #help-page .bot-footer .container button {
@@ -1915,13 +1947,16 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     font-weight: bold;
 }
 
-#help-page .bot-footer .container button:hover{
+#help-page .bot-footer .container button:hover {
     background-color: brown;
 }
 
+
 /* ---------- End Help page ---------- */
 
+
 /* ---------- Contact Page--------- */
+
 #contact {
     margin: 0;
     padding: 0;
@@ -1957,27 +1992,27 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     margin-bottom: 25px;
 }
 
-#contact .form{
+#contact .form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
 }
 
-#contact .form-title{
+#contact .form-title {
     font-size: 25px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-#contact .input-form{
+#contact .input-form {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-#contact .box-pesan{
+#contact .box-pesan {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -1997,35 +2032,35 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     height: 80px;
 }
 
-#contact .button{
+#contact .button {
     border: 2px solid #fff;
     padding: 10px 20px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
-#contact .button:hover{
+#contact .button:hover {
     background: #fff;
     color: #d84949;
 }
 
-#contact .social{
+#contact .social {
     display: flex;
     justify-content: center;
     color: rgba(255, 255, 255, 0.66);
-
 }
 
-#contact .inner-social .fab{
+#contact .inner-social .fab {
     margin: 0 20px;
     font-size: 30px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
-#contact .fab:hover{
+#contact .fab:hover {
     color: #fff;
 }
+
 
 /* ---------- End Contact Page--------- */
 
@@ -2039,16 +2074,14 @@ input#img-1:checked~.dots label#img-dot-1, input#img-2:checked~.dots label#img-d
     }
     #contact .input-form,
     #contact .contact-info,
-    #contact .social
-    {
+    #contact .social {
         flex-direction: column;
         align-items: center;
     }
-
-    #contact .input:first-child input{
+    #contact .input:first-child input {
         margin-bottom: 20px;
     }
-    #contact .input input{
+    #contact .input input {
         width: 94%
     }
 }
