@@ -1749,18 +1749,6 @@ input#img-4:checked~.dots label#img-dot-4 {
 /* ---------- END HOMIE --------- */
 
 
-/* ---------- RESEP PAGE --------- */
-
-.container .resep-container1 {
-    background: rgb(224, 24, 24);
-    margin: 0 auto;
-    font-weight: 900;
-}
-
-
-/* ---------- END RESEP PAGE --------- */
-
-
 /* ---------- Help page ---------- */
 
 #help-page * {
@@ -2061,6 +2049,22 @@ input#img-4:checked~.dots label#img-dot-4 {
 #contact .fab:hover {
     color: #fff;
 }
+
+
+/* ---------- RESEP PAGE --------- */
+
+.coba {
+    background-color: #fff;
+    margin: 0 auto;
+    font-weight: 900;
+}
+
+.coba h1 {
+    color: darkgreen;
+}
+
+
+/* ---------- END RESEP PAGE --------- */
 
 
 /* ---------- End Contact Page--------- */
