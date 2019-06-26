@@ -1080,12 +1080,10 @@ body {
 #register .facebook:hover,
 #register .twitter:hover {
     cursor: pointer;
-    
 }
 
-#register .judul
-{
-  margin-top: 50px;
+#register .judul {
+    margin-top: 50px;
 }
 
 #register .log {

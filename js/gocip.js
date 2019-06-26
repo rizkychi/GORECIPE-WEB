@@ -3,7 +3,7 @@
 /*                 Copyrights 2019                 */
 /* ----------------------------------------------- */
 
-$(document).ready(function(){
+$(document).ready(function() {
     // ---------- Show/Hide Logout Menu ---------- //
     if (isLogin == true) {
         $("#logout").show();
@@ -15,8 +15,8 @@ $(document).ready(function(){
 
 
     // ---------- Navbar ---------- //
-    $(window).on("scroll",function(){
-        if ($(window).scrollTop()>=30){
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() >= 30) {
             $(".bot-header").addClass("scrollme");
         } else {
             $(".bot-header").removeClass("scrollme");
@@ -24,23 +24,23 @@ $(document).ready(function(){
     });
 
     // show/hide search input
-    $("#search").click(function(){
-        $(".search").animate({height:"show"},350);
+    $("#search").click(function() {
+        $(".search").animate({ height: "show" }, 350);
         $(".search input[name=search]").focus();
     });
-    $(".search-close").click(function(){
-        $(".search").animate({height:"hide"},350);
+    $(".search-close").click(function() {
+        $(".search").animate({ height: "hide" }, 350);
     });
-    
+
     // adding class 'active' to navbar based on current page
     var title = document.title.substr(12);
-    $(".right-menu li a:contains("+title+")").addClass("active");
+    $(".right-menu li a:contains(" + title + ")").addClass("active");
     // ---------- End Navbar ---------- //
 
 
 
     // ---------- Show/Hide Language List ---------- //
-    $("#language").click(function(){
+    $("#language").click(function() {
         $(".list-language").fadeToggle(250);
     });
     // ---------- End Show/Hide Language List ---------- //
@@ -52,25 +52,25 @@ $(document).ready(function(){
     $(".pages").addClass("animated zoomIn faster");
 
     // add click event on sidebar menu
-    $(".sidebar a").click(function(){
+    $(".sidebar a").click(function() {
         var getID = $(this).attr("id"); // get id from clicked sidebar 
-        var pages = "#"+getID+"Content"; 
+        var pages = "#" + getID + "Content";
 
         // remove class active on all menu
         $(".sidebar a").removeClass("sidebar-selected");
 
         // add class active only on clicked menu
         $(this).addClass("sidebar-selected");
-        
+
         // hide all pages
         $(".pages").hide();
-        
+
         // show only pages selected
         $(pages).show();
 
         // add breadcrumb
         $("#sub-breadcrumb").remove();
-        $(".breadcrumb").append("<a id='sub-breadcrumb'>"+$("#"+getID).text()+"</a>");
+        $(".breadcrumb").append("<a id='sub-breadcrumb'>" + $("#" + getID).text() + "</a>");
     });
     // ---------- End Switch Page ---------- //
 
@@ -81,8 +81,8 @@ $(document).ready(function(){
     var confirmpw = $("#confirmpw");
 
     // check password confirmation
-    confirmpw.change(function(){
-        if (newpw.val() != confirmpw.val()){
+    confirmpw.change(function() {
+        if (newpw.val() != confirmpw.val()) {
             confirmpw[0].setCustomValidity("Passwords Don't Match");
         } else {
             confirmpw[0].setCustomValidity("");
@@ -94,7 +94,7 @@ $(document).ready(function(){
 
     // ---------- Hide Favorite Recipe on Page: Account ---------- //
     $(".fav-item").append("<div class='fav-close'></div>");
-    $(".fav-close").click(function(){
+    $(".fav-close").click(function() {
         var item = $(this).parent(".fav-item");
 
         // instanciate new modal
@@ -104,25 +104,25 @@ $(document).ready(function(){
             closeMethods: ['overlay', 'escape'],
             cssClass: ['custom-class-1', 'custom-class-2']
         });
-        
+
         // set content
-        modal.setContent("<h1>Hapus Favorit</h1><p>Apakah anda yakin akan menghapus favorit resep berikut?</p><p>Nama resep : "+item.text()+"</p>");
-        
+        modal.setContent("<h1>Hapus Favorit</h1><p>Apakah anda yakin akan menghapus favorit resep berikut?</p><p>Nama resep : " + item.text() + "</p>");
+
         // add a button
         modal.addFooterBtn('Batal', 'tingle-btn tingle-btn--default tingle-btn--pull-right', function() {
             // close
             modal.close();
             modal.destroy();
         });
-        
+
         // add button
         modal.addFooterBtn('Hapus', 'tingle-btn tingle-btn--danger tingle-btn--pull-right', function() {
             // close
             modal.close();
             // hide
-            item.animate({width:"hide"},350);
+            item.animate({ width: "hide" }, 350);
         });
-        
+
         // open modal
         modal.open();
     });
@@ -132,34 +132,34 @@ $(document).ready(function(){
 
     // ---------- Breadcrumb ---------- //
     page_title = $('title').text().substr(12); //get page title
-    
+
     separator = '<span class="separator"></span>'; // define separator '>'
 
 
     if (page_title == 'Akun') {
         // if page is akun
-        bread = '<a href="?p='+page_title+'">'+page_title+'</a>';
+        bread = '<a href="?p=' + page_title + '">' + page_title + '</a>';
         bread += separator;
         bread += "<a id='sub-breadcrumb'>Informasi Umum</a>";
-    // } else if ($(location).attr("search").contains("detail_resep")) { 
-    //     // if page is detail_resep
-    //     bread = '<a href="?p=resep">Resep</a>';
-    //     bread += separator;
-    //     bread += '<a>'+page_title+'</a>';
+        // } else if ($(location).attr("search").contains("detail_resep")) { 
+        //     // if page is detail_resep
+        //     bread = '<a href="?p=resep">Resep</a>';
+        //     bread += separator;
+        //     bread += '<a>'+page_title+'</a>';
     } else {
         //if page is normal
-        bread = '<a href="?p='+page_title+'">'+page_title+'</a>';
+        bread = '<a href="?p=' + page_title + '">' + page_title + '</a>';
     }
 
     // define full breadcrumb
-    full_bread = '<div class="container">'+
-                    '<div class="breadcrumb">'+
-                        '<a href="index.php">'+
-                            '<i class="fas fa-home"></i>'+
-                        '</a>'
-                        +separator+bread+
-                    '</div>'+
-                '</div>';
+    full_bread = '<div class="container">' +
+        '<div class="breadcrumb">' +
+        '<a href="index.php">' +
+        '<i class="fas fa-home"></i>' +
+        '</a>' +
+        separator + bread +
+        '</div>' +
+        '</div>';
 
     if (page_title != 'Login' && page_title != 'Daftar' && page_title != 'Home') {
         $(".content").prepend(full_bread);
@@ -186,7 +186,7 @@ $(document).ready(function(){
             play = '<div class="play"></div>';
         return thumb.replace("ID", id) + play;
     }
-    
+
     function youtubeIframe() {
         var iframe = document.createElement("iframe");
         var embed = "https://www.youtube.com/embed/ID?autoplay=1";
@@ -196,10 +196,11 @@ $(document).ready(function(){
         this.parentNode.replaceChild(iframe, this);
     }
     // ---------- End Simple Youtube Embedded ---------- //
-   
+
 
 
     // ---------- HOMIE ---------- //
+
 
     // ---------- END HOMIE ---------- //
 
@@ -211,13 +212,13 @@ function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+        slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-  
-    slides[slideIndex-1].style.display = "block";  
+    if (slideIndex > slides.length) { slideIndex = 1 }
+
+    slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000);
-  }
+}
 
 // ----------------- End Slideshow ----------------- //
