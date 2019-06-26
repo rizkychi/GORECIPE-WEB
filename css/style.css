@@ -1751,8 +1751,8 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 /* ---------- RESEP PAGE --------- */
 
-.resep-container1 {
-    background: #fff;
+.container .resep-container1 {
+    background: rgb(224, 24, 24);
     margin: 0 auto;
     font-weight: 900;
 }
