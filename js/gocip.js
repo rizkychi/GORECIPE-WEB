@@ -21,6 +21,28 @@ $(document).ready(function(){
 
 
     // ---------- Navbar ---------- //
+
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop() >= 30) {
+                $(".bot-header").addClass("scrollme");
+            } else {
+                $(".bot-header").removeClass("scrollme");
+            }
+        });
+
+        // show/hide search input
+        $("#search").click(function() {
+            $(".search").animate({ height: "show" }, 350);
+            $(".search input[name=search]").focus();
+        });
+        $(".search-close").click(function() {
+            $(".search").animate({ height: "hide" }, 350);
+        });
+
+        // adding class 'active' to navbar based on current page
+        var title = document.title.substr(12);
+        $(".right-menu li a:contains(" + title + ")").addClass("active");
+
         $(window).on("scroll",function(){
             if ($(window).scrollTop()>=30){
                 $(".bot-header").addClass("scrollme");
@@ -206,7 +228,7 @@ $(document).ready(function(){
             this.parentNode.replaceChild(iframe, this);
         }
     // ---------- End Simple Youtube Embedded ---------- //
-   
+
 
 
     // ---------- Sub Nav Detail Recipe Page ---------- //
