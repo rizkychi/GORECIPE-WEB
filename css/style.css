@@ -1754,6 +1754,7 @@ input#img-4:checked~.dots label#img-dot-4 {
 .resep-container1 {
     background: #fff;
     margin: 0 auto;
+    font-weight: 900;
 }
 
 
