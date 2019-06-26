@@ -94,7 +94,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">
@@ -147,7 +147,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">
@@ -218,7 +218,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">
@@ -292,7 +292,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">
@@ -368,7 +368,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">

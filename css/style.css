@@ -1910,6 +1910,7 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 #help-page .sub-help-category h4 {
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 0;
 }
 
@@ -1923,6 +1924,10 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 #help-page .sub-help-category ul li a {
     text-decoration: none;
+    color: rgb(104, 104, 104);
+}
+#help-page .sub-help-category ul li a:hover {
+    text-decoration: underline;
 }
 
 #help-page #your-account .sub-help-category h4,
