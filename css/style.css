@@ -2051,22 +2051,6 @@ input#img-4:checked~.dots label#img-dot-4 {
 }
 
 
-/* ---------- RESEP PAGE --------- */
-
-.coba {
-    background-color: #fff;
-    margin: 0 auto;
-    font-weight: 900;
-}
-
-.coba h1 {
-    color: darkgreen;
-}
-
-
-/* ---------- END RESEP PAGE --------- */
-
-
 /* ---------- End Contact Page--------- */
 
 @media screen and (max-width: 1080px) {
@@ -2090,3 +2074,19 @@ input#img-4:checked~.dots label#img-dot-4 {
         width: 94%
     }
 }
+
+
+/* ---------- RESEP PAGE --------- */
+
+.coba {
+    background-color: #fff;
+    margin: 0 auto;
+    font-weight: 900;
+}
+
+.coba h1 {
+    color: darkgreen;
+}
+
+
+/* ---------- END RESEP PAGE --------- */
