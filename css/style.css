@@ -1954,7 +1954,7 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 #help-page .bot-footer .container-foot {
     width: 100%;
-    background-image: url("/gocip/img/footer.png");
+    background-image: url("../img/footer.png");
     background-size: cover;
     overflow: auto;
     text-align: center;
@@ -2096,7 +2096,6 @@ input#img-4:checked~.dots label#img-dot-4 {
 #contact .fab:hover {
     color: #fff;
 }
-
 
 /* ---------- End Contact Page--------- */
 

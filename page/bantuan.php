@@ -16,15 +16,15 @@
 
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <img src="/gocip/img/slide1.jpg" style="width:100%">
+            <img src="img/slide1.jpg" style="width:100%">
         </div>
         
         <div class="mySlides fade">
-            <img src="/gocip/img/slide2.jpg" style="width:100%">
+            <img src="img/slide2.jpg" style="width:100%">
         </div>
         
         <div class="mySlides fade">
-            <img src="/gocip/img/slide3.jpg" style="width:100%">
+            <img src="img/slide3.jpg" style="width:100%">
         </div>
     
     <!-- Search -->
