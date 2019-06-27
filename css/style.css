@@ -689,66 +689,12 @@ body {
 
 /* ---------- Detail Recipe Page ---------- */
 
-.btn-fav {
-    border-radius: 50px;
-    width: 90%;
-}
-
-.right-detail {
-    margin-left: 10px;
-}
-
-.right-detail .item {
-    margin-left: 10px;
-    overflow: hidden;
-}
-
-.right-detail .item img {
-    width: 100px;
-    height: 70px;
-    float: left;
-    margin-right: 10px;
-}
-
-.right-detail h3 {
-    font-weight: 400;
-    margin: 10px 0;
-}
-
-.right-detail .recommend {
-    cursor: pointer;
-    clear: both;
-    margin: 10px 0;
-    overflow: hidden;
-}
-
-#recipe-content {
-    padding-right: 20px;
-    border-right: 1px solid rgba(0, 0, 0, .1);
-}
-
-#recipe-content .info {
-    margin-top: 10px;
-    padding: 5px 0;
-    text-align: center;
-}
-
-#recipe-content .info i {
-    margin-right: 10px;
-    color: #e74c3c;
-}
-
-.recommend a {
-    text-decoration: none;
-    color: #2B2B2C;
-}
-
 .bg-recipe {
     height: 500px;
     background-size: cover;
     background-position: center;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     top: 0;
     z-index: -99;
 }
@@ -759,7 +705,6 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     padding: 10px 20px;
-    margin-top: 180px;
 }
 
 .recipe-detail h2 {
@@ -768,53 +713,27 @@ body {
     ;
 }
 
-.recipe-detail .container-nav {
-    position: relative;
-    z-index: 1;
-}
-
 .recipe-detail .nav {
     position: fixed;
     margin-left: -70px;
     margin-top: -10px;
-    transition: 0.5s;
 }
 
-.recipe-detail .scrolled {
-    margin-top: -280px;
-    transition: 0.5s;
-}
-
-.recipe-detail .nav  i {
+.recipe-detail .nav div {
     width: 50px;
     height: 50px;
     background: #c0392b;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.5s;
     font-size: 28px;
     color: #fff;
     text-align: center;
     line-height: 1.75;
 }
 
-.recipe-detail .nav div i:hover {
+.recipe-detail .nav div:hover {
     background: #e74c3c;
-    transition: 0.1s;
-}
-
-.recipe-detail .nav .actives {
-    background: #e74c3c !important;
-}
-
-.recipe-detail .nav div span {
-    color: #fff;
-    font-size: 18px;
-    background: #e74c3c;
-    padding: 11.5px 20px;
-    z-index: 99;
-    position: fixed;
-    display: none;
-    white-space: nowrap;
+    transition: 0.5s;
 }
 
 .gocip-youtube {
@@ -869,13 +788,6 @@ body {
     cursor: pointer;
 }
 
-#videoRecipe,
-#titleRecipe,
-#methodRecipe,
-#ingredientRecipe {
-    overflow: hidden;
-}
-
 .ingredients {
     display: flex;
     flex-flow: row wrap;
@@ -888,12 +800,12 @@ body {
     padding: 10px 20px;
     margin: 10px 0;
     border-left: 3px solid rgba(0, 0, 0, 0.05);
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 .ingredients>div:hover {
     border-left: 3px solid #e74c3c;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 .method-recipe p {
@@ -1000,7 +912,7 @@ body {
 #login .pass {
     width: 70%;
     margin-left: 15px;
-}
+}   
 
 #login input {
     outline: none;
@@ -1168,10 +1080,12 @@ body {
 #register .facebook:hover,
 #register .twitter:hover {
     cursor: pointer;
+    
 }
 
-#register .judul {
-    margin-top: 50px;
+#register .judul
+{
+  margin-top: 50px;
 }
 
 #register .log {
@@ -1217,8 +1131,9 @@ body {
 
 @font-face {
     font-family: BillyTheGangItalic;
-    src: url("fonts/BillyTheGangItalic.ttf");
+    src:url("fonts/BillyTheGangItalic.ttf");
 }
+
 
 #about .caption-banner {
     background-color: rgba(0, 0, 0, 0.8);
@@ -1229,13 +1144,13 @@ body {
     width: 100%;
 }
 
-#about .caption-banner p {
+#about .caption-banner p{
     font-family: BillyTheGangItalic;
     font-size: 38px;
     line-height: 0;
     margin: 20px;
     text-align: center;
-    color: #eee;
+    color:#eee;
 }
 
 #about .caption2-banner {
@@ -1762,347 +1677,8 @@ input#img-4:checked~.dots label#img-dot-4 {
     font-size: 16px;
 }
 
-.sub .maile .btn-sub {
-    width: 100px;
-    height: 35px;
-    color: #fff;
-    background-color: cadetblue;
-    padding: 0;
-    border: 0;
-    font-weight: 800;
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 /* ---------- END HOMIE --------- */
-
-
-/* ---------- RESEP PAGE --------- */
-
-
-/* ---------- END RESEP PAGE --------- */
-
-
-/* ---------- Help page ---------- */
-
-#help-page * {
-    box-sizing: border-box;
-}
-
-#help-page {
-    margin-top: -20px;
-}
-
-/* Slideshow */
-
-#help-page .mySlides {
-    display: none;
-}
-
-#help-page .slideshow-container img {
-    margin-top: -300px;
-}
-
-
-/* Slideshow container */
-
-#help-page .slideshow-container {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    position: relative;
-    margin: auto;
-    display: inline-block;
-}
-
-
-/* Fading animation */
-
-#help-page .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 5.5s;
-    animation-name: fade;
-    animation-duration: 5.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .10
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .10
-    }
-    to {
-        opacity: 1
-    }
-}
-
-
-/* Search box */
-
-#help-page .search-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#help-page form.search-box input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 90%;
-    background: #f1f1f1;
-    border-radius: 10px 0px 0px 10px;
-}
-
-#help-page form.search-box button {
-    float: left;
-    width: 10%;
-    padding: 10px;
-    background: #e74c3c;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-    border-radius: 0px 10px 10px 0px;
-}
-
-#help-page form.search-box button i {
-    color: white;
-}
-
-#help-page form.search-box::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-#help-page .help-category,
-#help-page .sub-help-category {
-    float: left;
-    width: 30%;
-    margin-left: 25px;
-}
-
-#help-page .row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#help-page .help-category h1 {
-    font-size: 40px;
-    margin-left: 25px;
-    color: rgba(6, 28, 48, 0.836);
-}
-
-#help-page .sub-help-category h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-#help-page .sub-help-category h4 i {
-    display: inline;
-}
-
-#help-page .sub-help-category ul li {
-    list-style-type: none;
-}
-
-#help-page .sub-help-category ul li a {
-    text-decoration: none;
-    color: rgb(104, 104, 104);
-}
-#help-page .sub-help-category ul li a:hover {
-    text-decoration: underline;
-}
-
-#help-page #your-account .sub-help-category h4,
-#help-page #your-account .sub-help-category h4 i {
-    color: #e74c3c;
-}
-
-#help-page #search-discover .sub-help-category h4,
-#help-page #search-discover .sub-help-category h4 i {
-    color: #3498db;
-}
-
-#help-page #posting .sub-help-category h4 {
-    color: #048143;
-}
-
-#help-page #community .sub-help-category h4 {
-    color: #773397;
-}
-
-#help-page #policy .sub-help-category h4 {
-    color: #3498db;
-}
-
-#help-page #misc .sub-help-category h4 {
-    color: #e74c3c;
-}
-
-
-#help-page .bot-footer .container-foot {
-    width: 100%;
-    background-image: url("../img/footer.png");
-    background-size: cover;
-    overflow: auto;
-    text-align: center;
-    padding: 15px 0 25px 0;
-}
-#help-page .bot-footer .container-foot h3, #help-page .bot-footer .container-foot i {
-    color: white;
-}
-
-#help-page .bot-footer .container-foot h3 {
-    font-weight: 400;
-    padding: 5px 0;
-}
-#help-page .bot-footer {
-    margin-bottom: -32px;
-}
-
-#help-page .bot-footer .container-foot button {
-    border: none;
-    border-radius: 5px;
-    background-color: #e74c3c;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-#help-page .bot-footer .container button:hover {
-    background-color: brown;
-}
-
-
-/* ---------- End Help page ---------- */
-
-
-/* ---------- Contact Page--------- */
-
-#contact {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    margin: auto;
-}
-
-#contact .wrapper {
-    max-width: 700px;
-    margin: 50px auto;
-    background: #d84949;
-    color: white;
-    padding: 40px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-}
-
-#contact h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-    font-size: 35 px;
-}
-
-#contact .fas {
-    font-size: 30px;
-}
-
-#contact .contact-info {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.66);
-    margin-bottom: 25px;
-}
-
-#contact .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-#contact .form-title {
-    font-size: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#contact .input-form {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-#contact .box-pesan {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#contact .input input {
-    border: 0;
-    width: 260px;
-    padding: 10px 20px;
-    outline: none;
-}
-
-#contact .pesan textarea {
-    width: 94%;
-    border: 0;
-    padding: 10px 20px;
-    outline: none;
-    height: 80px;
-}
-
-#contact .button {
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-#contact .button:hover {
-    background: #fff;
-    color: #d84949;
-}
-
-#contact .social {
-    display: flex;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.66);
-}
-
-#contact .inner-social .fab {
-    margin: 0 20px;
-    font-size: 30px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-#contact .fab:hover {
-    color: #fff;
-}
-
-/* ---------- End Contact Page--------- */
 
 @media screen and (max-width: 1080px) {
     .container {
@@ -2111,17 +1687,5 @@ input#img-4:checked~.dots label#img-dot-4 {
     }
     .top-header img {
         margin-left: 10px;
-    }
-    #contact .input-form,
-    #contact .contact-info,
-    #contact .social {
-        flex-direction: column;
-        align-items: center;
-    }
-    #contact .input:first-child input {
-        margin-bottom: 20px;
-    }
-    #contact .input input {
-        width: 94%
     }
 }
