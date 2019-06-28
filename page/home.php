@@ -73,8 +73,8 @@
     <div class="home-container">
 
         <div class="info">
-            <div class="info-item animated fadeInLeft"><img src="img/home-info.png" alt="creative-cooking"></div>
-            <div class="info-item animated fadeInRight">
+            <div class="info-item"><img src="img/home-info.png" alt="creative-cooking"></div>
+            <div class="info-item">
                 <h1>Berani Untuk Masak Sendiri Mulai Dari Sekarang</h1>
                 <br>
                 <ul>
@@ -156,7 +156,7 @@
             <br>
             <br>
         </div>
-        <div class="sub animated rubberBand">
+        <div class="sub">
             <br>
             <br>
             <br>
