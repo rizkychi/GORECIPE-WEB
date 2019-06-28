@@ -3,7 +3,7 @@
     <div class="recipe-detail">
         <div class="container-nav">
             <div class="nav">
-                <div id="titleNav"><i class="fas fa-hamburger actives"></i><span>Deskripsi</span></div>
+                <div id="titleNav"><i class="fas fa-hamburger"></i><span>Deskripsi</span></div>
                 <div id="videoNav"><i class="fab fa-youtube"></i><span>Video</span></div>
                 <div id="ingredientNav"><i class="fas fa-shopping-basket"></i><span>Bahan</span></div>
                 <div id="methodNav"><i class="fas fa-utensils"></i><span>Cara Masak</span></div>
@@ -27,7 +27,7 @@
                 </div>
                 <div id="videoRecipe" class="video">
                     <h2>Video</h2>
-                    <div class="gocip-youtube" data-id="<?php echo $youtube ?>"></div>
+                    <div class="gocip-youtube"><iframe src="https://www.youtube.com/embed/<?php echo $youtube ?>"></iframe></div>
                 </div>
                 <div id="ingredientRecipe" class="ingredients">
                     <h2>Bahan-bahan</h2>

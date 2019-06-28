@@ -46,11 +46,6 @@
 
 /* ---------- End Flat Colors ---------- */
 
-@font-face {
-    font-family: Oswald;
-    src: url(fonts/Oswald.ttf);
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -802,10 +797,6 @@ body {
     transition: 0.1s;
 }
 
-.recipe-detail .nav .actives {
-    background: #e74c3c !important;
-}
-
 .recipe-detail .nav div span {
     color: #fff;
     font-size: 18px;
@@ -1129,11 +1120,26 @@ body {
     border: none;
     color: white;
     font-size: 20px;
-    padding: 1px;
+    padding: 5px;
     text-align: center;
     background: transparent;
     width: 100%;
     margin: auto;
+    cursor: pointer;
+    border: 1px solid rgba(77, 76, 76, 0.9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.5s;
+}
+#register button:hover {
+    background: #e74c3c;
+    color: #fff;
+    transition: 0.5s;
+}
+#register button:hover p {
+    color: #fff;
+    transition: 0.5s;
 }
 
 #register img {
@@ -1154,20 +1160,6 @@ body {
     text-align: center;
     margin: auto;
     margin-top: -5px;
-}
-
-#register .facebook,
-#register .twitter {
-    margin-bottom: 10px;
-    border: 1px solid rgba(77, 76, 76, 0.9);
-    border-radius: 20px;
-    padding: 5px;
-    overflow: hidden;
-}
-
-#register .facebook:hover,
-#register .twitter:hover {
-    cursor: pointer;
 }
 
 #register .judul {
