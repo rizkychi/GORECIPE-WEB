@@ -16,15 +16,15 @@
 
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <img src="/gocip/img/slide1.jpg" style="width:100%">
+            <img src="img/slide1.jpg" style="width:100%">
         </div>
         
         <div class="mySlides fade">
-            <img src="/gocip/img/slide2.jpg" style="width:100%">
+            <img src="img/slide2.jpg" style="width:100%">
         </div>
         
         <div class="mySlides fade">
-            <img src="/gocip/img/slide3.jpg" style="width:100%">
+            <img src="img/slide3.jpg" style="width:100%">
         </div>
     
     <!-- Search -->
@@ -94,7 +94,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">
@@ -147,7 +147,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">
@@ -218,7 +218,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">
@@ -292,7 +292,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">
@@ -368,7 +368,7 @@
 
         <div class="row">
             <div class="help-category">
-                    <h1></h1>
+                    <h1><p></p></h1>
             </div>
 
             <div class="sub-help-category">
@@ -478,7 +478,7 @@
 
 
     <div class="bot-footer">
-        <div class="container">
+        <div class="container-foot">
             <h3>Need more help?</h3>
             <button type="submit"><i class='fas fa-phone'></i> Contact Us</button>
         </div>

@@ -46,11 +46,6 @@
 
 /* ---------- End Flat Colors ---------- */
 
-@font-face {
-    font-family: Oswald;
-    src: url(fonts/Oswald.ttf);
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -695,8 +690,7 @@ body {
 }
 
 .right-detail {
-    margin-left: 30px;
-    border-left: 1px solid #999;
+    margin-left: 10px;
 }
 
 .right-detail .item {
@@ -721,6 +715,22 @@ body {
     clear: both;
     margin: 10px 0;
     overflow: hidden;
+}
+
+#recipe-content {
+    padding-right: 20px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+#recipe-content .info {
+    margin-top: 10px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#recipe-content .info i {
+    margin-right: 10px;
+    color: #e74c3c;
 }
 
 .recommend a {
@@ -753,6 +763,11 @@ body {
     ;
 }
 
+.recipe-detail .container-nav {
+    position: relative;
+    z-index: 1;
+}
+
 .recipe-detail .nav {
     position: fixed;
     margin-left: -70px;
@@ -761,29 +776,36 @@ body {
 }
 
 .recipe-detail .scrolled {
-    margin-top: -130px;
+    margin-top: -280px;
     transition: 0.5s;
 }
 
-.recipe-detail .nav div {
+.recipe-detail .nav  i {
     width: 50px;
     height: 50px;
     background: #c0392b;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.1s;
     font-size: 28px;
     color: #fff;
     text-align: center;
     line-height: 1.75;
 }
 
-.recipe-detail .nav div:hover {
+.recipe-detail .nav div i:hover {
     background: #e74c3c;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
-.recipe-detail .nav .actives {
-    background: #e74c3c !important;
+.recipe-detail .nav div span {
+    color: #fff;
+    font-size: 18px;
+    background: #e74c3c;
+    padding: 11.5px 20px;
+    z-index: 99;
+    position: fixed;
+    display: none;
+    white-space: nowrap;
 }
 
 .gocip-youtube {
@@ -800,42 +822,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;
     background: transparent;
-}
-
-.gocip-youtube img {
-    display: block;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
-    max-width: 100%;
-    width: 100%;
-    position: absolute;
     border: none;
-    height: auto;
-    cursor: pointer;
-    -webkit-transition: .4s all;
-    -moz-transition: .4s all;
-    transition: .4s all
-}
-
-.gocip-youtube img:hover {
-    filter: brightness(75%);
-}
-
-.gocip-youtube .play {
-    height: 64px;
-    width: 64px;
-    left: 50%;
-    top: 50%;
-    margin-left: -36px;
-    margin-top: -36px;
-    position: absolute;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAE/UlEQVR4Xu2bW2gcZRTH/+dMNtmYpqaiEcQ2Sc22fZnMRnwJvqTqiyIKQuKjeHnRIFQLvohXfDCJPhgqPlSI+KYVHwoiiBdaxReJ3SQUCkmzm16ghTa33SbdJHuOfJNuzGVt3GVndra7AyFLkjnf+f/mf+b75psTQoUfVOH6UQVQdUCFE6iWQIUboHoTvG0JxFtbw2hqOsQie4XoXgLuAXC3Eu0m1UYV2QXmegANpFoPonBGpI4tq45VaxUIiWqIVUMChJjZEhEGMzPAG90ngMD8kjkjIhkGVoRolYlWaO3zsmQyaYs5rcCS+SKiG6S6KMANSzUpRAsEzCvRDKteyzBfzCST5yKTk+n/cnpOAAnHOSwiR5n5CQB1ZV4mBthPYP607cyZU1u1bAIw0d5eF2po+ALAi2UuOnf6qsevhUJ9j4yMrGT/YB2AdnfXTM/NnYTqk3ek+FuilOhkayTyHJ04kTE/WgcQj0bfJ9X37mTx69qI3mqNxQbXAUzb9h5zw2CgoSIAiMzdJbK3+ezZlOuAacd5XYGhihCfLQXgpbbR0WEXQMK2fwNzdyUBEJEf9o+PP00Xu7rqM6nUPJhDlQQAQKrlwIEmmo5GH1XVPypMvCtXMhmHEh0dr4DoeCUCIOB5mnacdxX4oBIBKPCmccDnIHrNKwDNQ0OYGRjA6qVLXg1RcFwF+inhON8C6Ck4yg4ntsRi0HQaC8PDmB8edj8H5SDgK4o7zi8EPOZVUgZA9jAumBkcxNKpbc8kXg1/27hmWWwc8DeATq8y2AggO8bS6dOBKAsFfqcpxznPwH4/AZixAlEWRGPGAVcBNPsNIAhlIUDcAEgC2FUqACUui6s0ZdsrzFxTagAlKQuReeMA9Uq8iZvrJrjTeH7NFmYvMZAAfCyLm4EG4ENZpAMPwOPZoswADAzALKKKeAQfgFkwmWcI8yzhwXNEsAG4S+b+fqxevlzEi74pVDBvgu40WHy7b4O4Ng3a9rKX+4H5rAM8tvt2F91aCC0AaPTKY/8XgA92zyXxipkGrwC4v1QA/LJ7Ln0CTFE8Gp0k1Yf8BuC73XMLHKXzjjNiAQ/7CaBEdt8mMbsh8jMDj/sBoJR2z6XP3RKL2/Y3xNzrJYCA2D2XxGGzJXaMgT6vALjb4t4uZgpOnYCPzSzwDoAPC45Sxicq0RvmxcjLIPqyjHUUnDoR9VKis7MLIn8WHKWMT2RVe+31+OLiHIDaMtaSf+oiCy3j43vWGiQ6On4F0eH8o5TvGWYKbIvFnl0DEI32QfVY+crJP3NSfaFlbOxrF0A8Gm0i1QtePhTln6J3Z4jq9XAotO+BkZHF9Ta5RDT6NlQ/8m7Y4EQm1SMtY2OfmYz+bZTs6bESExPfk+ozwUnVg0yIvmuJxXoJcN+HbGqVdbtFZ2f7BTiytZnZg1R8DSmAEtFQayRyNNslug1ANqO4bR8C86sEPAWg3ddMiz9YUkV+tCzrk32x2F9bw+/4HyPnDh5sDIfD7WbPQID7ADQx0W5de6FqOkvrs63yqhoGkekurzNt8xZzLUyrvGmZZ65xW+aBGhGpcVvnAfNOkja1yTNnILIK1VVYlvm+rCJpmHZ55jQDN02rPJuWeZFFYk4pkCLVJDEviOo8A7NQvc7MFx6MRKY2XvG8ART/ggQr4o4OCFa6xc+mCqD4TMsrYtUB5XW9ip9t1QHFZ1peEf8BQLiRGHbvOw4AAAAASUVORK5CYII=") no-repeat;
-    cursor: pointer;
 }
 
 #videoRecipe,
@@ -1098,11 +1086,26 @@ body {
     border: none;
     color: white;
     font-size: 20px;
-    padding: 1px;
+    padding: 5px;
     text-align: center;
     background: transparent;
     width: 100%;
     margin: auto;
+    cursor: pointer;
+    border: 1px solid rgba(77, 76, 76, 0.9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.5s;
+}
+#register button:hover {
+    background: #e74c3c;
+    color: #fff;
+    transition: 0.5s;
+}
+#register button:hover p {
+    color: #fff;
+    transition: 0.5s;
 }
 
 #register img {
@@ -1123,20 +1126,6 @@ body {
     text-align: center;
     margin: auto;
     margin-top: -5px;
-}
-
-#register .facebook,
-#register .twitter {
-    margin-bottom: 10px;
-    border: 1px solid rgba(77, 76, 76, 0.9);
-    border-radius: 20px;
-    padding: 5px;
-    overflow: hidden;
-}
-
-#register .facebook:hover,
-#register .twitter:hover {
-    cursor: pointer;
 }
 
 #register .judul {
@@ -1807,6 +1796,9 @@ input#img-4:checked~.dots label#img-dot-4 {
     box-sizing: border-box;
 }
 
+#help-page {
+    margin-top: -20px;
+}
 
 /* Slideshow */
 
@@ -1922,6 +1914,7 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 #help-page .sub-help-category h4 {
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 0;
 }
 
@@ -1935,6 +1928,10 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 #help-page .sub-help-category ul li a {
     text-decoration: none;
+    color: rgb(104, 104, 104);
+}
+#help-page .sub-help-category ul li a:hover {
+    text-decoration: underline;
 }
 
 #help-page #your-account .sub-help-category h4,
@@ -1963,21 +1960,28 @@ input#img-4:checked~.dots label#img-dot-4 {
     color: #e74c3c;
 }
 
-#help-page .bot-footer .container {
+
+#help-page .bot-footer .container-foot {
     width: 100%;
-    background-image: url("/gocip/img/footer.png");
+    background-image: url("../img/footer.png");
     background-size: cover;
     overflow: auto;
     text-align: center;
-    padding-bottom: 15px;
+    padding: 15px 0 25px 0;
 }
-
-#help-page .bot-footer .container h3,
-#help-page .bot-footer .container i {
+#help-page .bot-footer .container-foot h3, #help-page .bot-footer .container-foot i {
     color: white;
 }
 
-#help-page .bot-footer .container button {
+#help-page .bot-footer .container-foot h3 {
+    font-weight: 400;
+    padding: 5px 0;
+}
+#help-page .bot-footer {
+    margin-bottom: -32px;
+}
+
+#help-page .bot-footer .container-foot button {
     border: none;
     border-radius: 5px;
     background-color: #e74c3c;
@@ -2101,7 +2105,6 @@ input#img-4:checked~.dots label#img-dot-4 {
 #contact .fab:hover {
     color: #fff;
 }
-
 
 /* ---------- End Contact Page--------- */
 
