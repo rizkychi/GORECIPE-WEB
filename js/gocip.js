@@ -200,3 +200,59 @@ $(document).ready(function(){
         setTimeout(showSlides, 5000);
     }
 // ----------------- End Slideshow ----------------- //
+
+// ----------------- Article Slideshow -------------- //
+    var slideIndex = 1;
+    showSlide(slideIndex);
+        
+    function plusSlides(n){
+        showSlide(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlide(slideIndex = n);
+    }
+    
+    function showSlide(n){
+        var i;
+        var slides = document.getElementsByClassName("slide-foto");
+        var dots = document.getElementsByClassName("titik");
+        
+        if (n > slides.length) { 
+            slideIndex = 1
+        };
+        
+        if (n < 1) { 
+            slideIndex = slides.length
+        };
+        
+        for (i=0;i<slides.length;i++) {
+            slides[i].style.display = "none";
+        };
+        
+        for (i=0;i<dots.length;i++) {
+            dots[i].className = dots[i].className.replace(" active","");
+        };
+        
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+
+// ----------------- End Article Slideshow -------------- //
+
+// ----------------- Zoom Image Article ----------------- //
+
+    $(document).ready(function(){
+	    $('#ext1').zoom();
+    });
+    $(document).ready(function(){
+	    $('#ext2').zoom();
+    });
+    $(document).ready(function(){
+	    $('#ext3').zoom();
+    });
+    $(document).ready(function(){
+	    $('#ext4').zoom();
+    });
+
+// ----------------- Zoom Image Article ----------------- //
