@@ -2227,6 +2227,11 @@ input#img-4:checked~.dots label#img-dot-4 {
     background-color: white;
 }
 
+#artikel .zoom {
+    display:inline-block;
+	position: relative;
+}
+
 #artikel .foto-artikel{
     width: 100%;
     height: 230px;
@@ -2266,15 +2271,15 @@ input#img-4:checked~.dots label#img-dot-4 {
 }
 
 #artikel .judul-rating{
+    box-sizing: border-box;
     position: relative;
     float: right;
-    width: 100%;
-    height: 115px;
+    width: 100%;    
 }
 
 #artikel .judul-rating h3{
     margin: 20px 20px 5px 20px;
-    font-size: 24.5px;
+    font-size: 20px;
     font-weight: 600;
     font-family: sans-serif;
     color: #333;
@@ -2434,6 +2439,7 @@ input#img-4:checked~.dots label#img-dot-4 {
     float: right;
     display:block;
     position: relative;
+    background: transparent;
 }
 
 #artikel .cari
@@ -2515,13 +2521,13 @@ input#img-4:checked~.dots label#img-dot-4 {
 }
 
 #artikel .populer{
+    margin : 20px 0px 0px 0px;
     box-sizing: border-box;
     width: 240px;
     float: right;
     display:block;
     position: relative;
     background: white;
-    margin : 0px;;
     overflow: hidden;
     padding-bottom: 20px;
 }
@@ -2581,11 +2587,6 @@ input#img-4:checked~.dots label#img-dot-4 {
 #artikel .daftar-artikel:hover h2{
     cursor: pointer;
     color: #d84949;
-}
-
-#artikel .zoom {
-    display:inline-block;
-	position: relative;
 }
 
 /* ---------- End Article Page ---------- */
