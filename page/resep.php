@@ -10,16 +10,19 @@
                 <li>
                     <a href="#">
                         <img src="img/kebab.jpg" alt="kategori-1">
+                        <label>makanan 1</label>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="img/kebab.jpg" alt="kategori-2">
+                        <h4>makanan 2</h4>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="img/kebab.jpg" alt="kategori-2">
+                        <h4>makanan 3</h4>
                     </a>
                 </li>
             </ul>

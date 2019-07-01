@@ -780,7 +780,7 @@ body {
     transition: 0.5s;
 }
 
-.recipe-detail .nav  i {
+.recipe-detail .nav i {
     width: 50px;
     height: 50px;
     background: #c0392b;
@@ -1098,11 +1098,13 @@ body {
     outline: none;
     transition: 0.5s;
 }
+
 #register button:hover {
     background: #e74c3c;
     color: #fff;
     transition: 0.5s;
 }
+
 #register button:hover p {
     color: #fff;
     transition: 0.5s;
@@ -1768,10 +1770,11 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 .coba-box li {
     margin: 5px;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     position: relative;
     overflow: hidden;
+    border-radius: 50%;
 }
 
 .coba-box li a {
@@ -1784,6 +1787,11 @@ input#img-4:checked~.dots label#img-dot-4 {
     width: 100%;
     height: 100%;
     transition: 0.5s;
+}
+
+.coba-box li h4 {
+    display: block;
+    overflow: hidden;
 }
 
 
@@ -1799,6 +1807,7 @@ input#img-4:checked~.dots label#img-dot-4 {
 #help-page {
     margin-top: -20px;
 }
+
 
 /* Slideshow */
 
@@ -1930,6 +1939,7 @@ input#img-4:checked~.dots label#img-dot-4 {
     text-decoration: none;
     color: rgb(104, 104, 104);
 }
+
 #help-page .sub-help-category ul li a:hover {
     text-decoration: underline;
 }
@@ -1960,7 +1970,6 @@ input#img-4:checked~.dots label#img-dot-4 {
     color: #e74c3c;
 }
 
-
 #help-page .bot-footer .container-foot {
     width: 100%;
     background-image: url("../img/footer.png");
@@ -1969,7 +1978,9 @@ input#img-4:checked~.dots label#img-dot-4 {
     text-align: center;
     padding: 15px 0 25px 0;
 }
-#help-page .bot-footer .container-foot h3, #help-page .bot-footer .container-foot i {
+
+#help-page .bot-footer .container-foot h3,
+#help-page .bot-footer .container-foot i {
     color: white;
 }
 
@@ -1977,6 +1988,7 @@ input#img-4:checked~.dots label#img-dot-4 {
     font-weight: 400;
     padding: 5px 0;
 }
+
 #help-page .bot-footer {
     margin-bottom: -32px;
 }
@@ -2105,6 +2117,7 @@ input#img-4:checked~.dots label#img-dot-4 {
 #contact .fab:hover {
     color: #fff;
 }
+
 
 /* ---------- End Contact Page--------- */
 
