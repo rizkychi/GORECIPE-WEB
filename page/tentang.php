@@ -62,20 +62,20 @@
             <section class="batas3">
                 <div class="konten-tim">
                     <h2>TIM KAMI</h2>
-                    <div class="tim1" style="margin-right: 28px;">
+                    <div class="tim1">
                         <div class="foto">
                             <img src="img/tentang/tim-rizky.jpg" width="190px" height="240px" alt="icon">
                             <div class="bayangan">
                                 <div class="sosial">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="http://www.facebook.com/nhaegakure">
                                                 <img class="icon-sosial" src="img/tentang/fb.png">
                                                 <img class="icon-sosial2" src="img/tentang/fb-hover.png">
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="http://www.instagram.com/rizkychi">
                                                 <img class="icon-sosial" src="img/tentang/ig.png">
                                                 <img class="icon-sosial2" src="img/tentang/ig-hover.png">
                                             </a>
@@ -92,7 +92,7 @@
                         </div>
                         <p><b>RIZKY NUR HIDAYATULLAH</b></p> 
                     </div>  
-                    <div class="tim1" style="margin-right: 27px;">
+                    <div class="tim1">
                         <div class="foto">
                             <img src="img/tentang/tim-alfian.jpg" width="190px" height="240px" alt="icon">
                             <div class="bayangan">
@@ -122,7 +122,7 @@
                         </div>
                         <p><b>MUHAMMAD NUR ALFIAN</b></p> 
                     </div>
-                    <div class="tim1" style="margin-right: 27px;">
+                    <div class="tim1">
                         <div class="foto">
                             <img src="img/tentang/tim-ima.jpg" width="190px" height="240px" alt="icon">
                             <div class="bayangan">
@@ -152,7 +152,7 @@
                         </div>
                         <p><b>AWALIYATUL HIKMAH</b></p> 
                     </div>
-                    <div class="tim1" style="margin-right: 28px;">
+                    <div class="tim1">
                         <div class="foto">
                             <img src="img/tentang/tim-ridwan.jpg" width="190px" height="240px" alt="icon">
                             <div class="bayangan">

@@ -1,15 +1,4 @@
 
-    <!-- <div class="bot-header">
-        <div class="container">
-            <ul class="help-menu left-menu">
-                <li><a href="#policy">Policy</a></li>
-                <li><a href="#community">Community</a></li>
-                <li><a href="#your-account">Your Account</a></li>
-                <li><a href="#search-discover">Search and Discovery</a></li>
-            </ul>
-        </div>
-    </div> -->
-<!-- End Navbar -->
     
 <div id="help-page">
         <!-- Slideshow -->
@@ -36,7 +25,7 @@
 
     <!-- End Slideshow -->
     <!-- 1 -->
-    <div id="your-account">
+    <div id="your-account" class="help-space">
         <div class="row">
             <div class="help-category">
                 <h1>Your Account</h1>
@@ -173,7 +162,7 @@
     </div>
 
     <!-- 2 -->
-    <div id="search-discover">
+    <div id="search-discover" class="help-space">
         <div class="row">
             <div class="help-category">
                 <h1>Search and discovery</h1>
@@ -250,7 +239,7 @@
     </div>
 
     <!-- 3 -->
-    <div id="posting">
+    <div id="posting" class="help-space">
         <div class="row">
             <div class="help-category">
                 <h1>Posting</h1>
@@ -327,7 +316,7 @@
     </div>  
 
     <!-- 4 -->
-    <div id="community">
+    <div id="community" class="help-space">
         <div class="row">
             <div class="help-category">
                 <h1>Community</h1>
@@ -397,7 +386,7 @@
     </div>  
 
     <!-- 5 -->
-    <div id="policy">
+    <div id="policy" class="help-space">
         <div class="row">
             <div class="help-category">
                 <h1>Policy</h1>
@@ -445,8 +434,8 @@
         <br>
     </div>  
 
-    <!-- 6 -->
-    <div id="misc">
+    <!-- 6 --> 
+    <div id="more" class="help-space">
         <div class="row">
             <div class="help-category">
                 <h1>More</h1>
@@ -489,5 +478,19 @@
     <script>
         var slideIndex = 0;
         showSlides();
+
+        help_nav =  '<div class="help-nav">'+
+                        '<div class="container">'+
+                            '<ul class="help-menu">'+
+                                '<li><a href="#your-account">Your Account</a></li>'+
+                                '<li><a href="#search-discover">Search and Discovery</a></li>'+
+                                '<li><a href="#posting">Posting</a></li>'+
+                                '<li><a href="#community">Community</a></li>'+
+                                '<li><a href="#policy">Policy</a></li>'+
+                                '<li><a href="#more">More</a></li>'+
+                            '</ul>'+
+                        '</div>'+
+                    '</div>'
+        $(".bot-header").append(help_nav);
     </script>
 </div>

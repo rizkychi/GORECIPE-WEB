@@ -419,8 +419,44 @@ body {
     ;
 }
 
-
 /* End Dropdown */
+
+/* Help Nav */
+
+.help-nav {
+    clear: both;
+    background: #c0392b;
+    overflow: hidden;
+    text-align: center;
+}
+
+.help-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.help-menu li {
+    display: inline-block;
+}
+
+.help-menu li a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 16px;
+    transition: 0.5s;
+}
+
+.help-menu li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+/* End Help Nav */
 
 
 /* ---------- End Navbar ---------- */
@@ -694,7 +730,7 @@ body {
 }
 
 .right-detail .item {
-    margin-left: 10px;
+    margin: 0 10px;
     overflow: hidden;
 }
 
@@ -736,6 +772,11 @@ body {
 .recommend a {
     text-decoration: none;
     color: #2B2B2C;
+}
+
+.recommend p {
+    font-size: 14px;
+    color: #888;
 }
 
 .bg-recipe {
@@ -877,6 +918,64 @@ body {
 }
 
 
+#detail-recipe .rating { 
+    border: none;
+    margin: 0 auto;
+    float: left;
+}
+
+#detail-recipe .rating > input { 
+    display: none; 
+} 
+
+#detail-recipe .rating > label:before { 
+    margin: 0 14px;
+    font-size: 30px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+#detail-recipe .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+}
+
+#detail-recipe .rating > label { 
+    color: #ddd; 
+    float: right; 
+}
+
+#detail-recipe .rating > input:checked ~ label, /* show gold star when clicked */
+#detail-recipe .rating:not(:checked) > label:hover, /* hover current star */
+#detail-recipe .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+#detail-recipe .rating > input:checked + label:hover, /* hover current star when changing rating */
+#detail-recipe .rating > input:checked ~ label:hover,
+#detail-recipe .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+#detail-recipe .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+#detail-recipe .cat-banner {
+    width: 100%;
+    height: 60px;
+    margin: 5px 0;
+    background: #048143;
+    text-align: center;
+    background-size: cover;
+
+}
+
+#detail-recipe .cat-banner h2 {
+    font-weight: 500;
+    line-height: 2.5;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#detail-recipe .cat-banner h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* ---------- End Detail Recipe Page ---------- */
 
 
@@ -884,7 +983,6 @@ body {
 
 #login .outer {
     margin-top: 20px;
-    width: 300px;
 }
 
 #login .box {
@@ -892,8 +990,19 @@ body {
     -moz-box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 1);
     box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 1);
     background: rgb(255, 255, 255);
-    padding: 20px;
-    padding-top: 30px;
+    overflow: hidden;
+}
+
+#login .login-img {
+    width: 600px;
+    height: 400px;
+    float: left;
+    background-size: cover;
+}
+
+#login .login-form {
+    float: left;
+    margin: 40px 20px;
 }
 
 #login .username,
@@ -1320,7 +1429,7 @@ body {
 
 #about .konten-tim {
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 0 5px;
     height: 430px;
 }
 
@@ -1342,6 +1451,7 @@ body {
     margin-bottom: 30px;
     overflow: hidden;
     background-color: white;
+    margin: 0 10px;
 }
 
 #about .foto {
@@ -1474,7 +1584,7 @@ body {
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-    transition: opacity .5s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
     opacity: 0;
 }
 
@@ -1516,8 +1626,6 @@ input:checked+.slide-container .slide-nav label {
     margin: 0 auto;
     width: 1080px;
     height: 100%;
-    -webkit-filter: brightness(50%);
-    filter: brightness(50%);
 }
 
 input:checked+.slide-container .slide {
@@ -1561,6 +1669,54 @@ input#img-4:checked~.dots label#img-dot-4 {
 .home-container {
     background: #fff;
     margin: 0 auto;
+}
+
+.features {
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;    
+}
+
+.features .feat-item {
+    width: 300px;
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.features .feat-item:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.features .feat-item i {
+    font-size: 3.5em;
+    margin: 10px 0;
+}
+
+.hr-style {
+    padding: 0;
+    border: none;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    color: #e74c3c;
+    text-align: center;
+}
+
+.hr-style::after {
+    content:" ";
+    display: inline-block;
+    position: relative;
+    top: -2.0em;
+    font-size: 1.5em;
+    padding: 19px 2.6em;
+    background: #fff url(../img/brand.png) no-repeat scroll center;
+    background-size: 103px 30px;
+    height: 50px;
 }
 
 .home-container .info {
@@ -1950,6 +2106,9 @@ input#img-4:checked~.dots label#img-dot-4 {
     background-color: brown;
 }
 
+#help-page .help-space {
+    padding-top: 120px;
+}
 
 /* ---------- End Help page ---------- */
 
@@ -2590,6 +2749,27 @@ input#img-4:checked~.dots label#img-dot-4 {
 }
 
 /* ---------- End Article Page ---------- */
+
+
+
+/* ---------- Not Found Page ---------- */
+
+#not-found  {
+    align-content: center;
+}
+
+.not-found-content {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.not-found-content img {
+    width: 200px;
+}
+
+/* ---------- End Not Found Page ---------- */
 
 
 @media screen and (max-width: 1080px) {

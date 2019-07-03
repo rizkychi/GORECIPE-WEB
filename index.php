@@ -15,10 +15,9 @@
     <title>Go-Recipe</title>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery.lazy.min.js"></script>
     <script src="js/tingle.min.js"></script>
-    <script src="js/gocip.js"></script>
     <script src='js/jquery.zoom.js'></script>
+    <script src="js/gocip.js"></script>
 </head>
 
 
@@ -149,7 +148,7 @@
                             // change page title
                             echo '<script>document.title += " | '.$title.'"</script>';
                         } else {
-                            echo "Resep tidak ditemukan"; 
+                            include 'page/recipe_not_found.php';
                             // change page title
                             echo '<script>document.title += " | Tidak Ditemukan"</script>';
                         }
@@ -160,7 +159,7 @@
                         echo '<script>document.title += " | '.$page_title.'"</script>';
                     }
                 } else {
-                    echo 'Halaman tidak ditemukan';
+                    include 'page/page_not_found.php';
                     // change page title
                     echo '<script>document.title += " | Tidak Ditemukan"</script>';
                 }

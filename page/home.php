@@ -6,7 +6,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 1" src="img/img_mountains_wide.jpg">
+                <img alt="banner 1" src="img/banner_1.jpg">
             </div>
 
             <div class="slide-nav">
@@ -21,7 +21,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 2" src="img/img_nature_wide.jpg">
+                <img alt="banner 2" src="img/banner_2.jpg">
             </div>
 
             <div class="slide-nav">
@@ -36,7 +36,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 3" src="img/img_snow_wide.jpg">
+                <img alt="banner 3" src="img/banner_3.jpg">
             </div>
 
             <div class="slide-nav">
@@ -51,7 +51,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 4" src="img/img_nature_spring_forest.jpg">
+                <img alt="banner 4" src="img/banner_4.jpg">
             </div>
 
             <div class="slide-nav">
@@ -71,6 +71,26 @@
     </ul>
 
     <div class="home-container">
+
+        <div class="features">
+            <div class="feat-item">
+                <i class="fas fa-utensils" style="color: #27ae60"></i>
+                <h2>Detail Memasak</h2>
+                <p>Go-Recipe dilengkapi berbagai info resep masakan dan cara memasak, tersedia video yang dapat membantu penjelasan resep masakan.</p>
+            </div>
+            <div class="feat-item">
+                <i class="fas fa-newspaper" style="color: #f39c12"></i>
+                <h2>Artikel Makanan</h2>
+                <p>Selain resep masakan, Go-Recipe juga memuat artikel yang membahas seputar makanan dan tips & trik.</p>
+            </div>
+            <div class="feat-item">
+                <i class="fas fa-heart" style="color: #e74c3c"></i>
+                <h2>Simpan Favorit</h2>
+                <p>Daftar akun sekarang dan favoritkan resep kesukaanmu! Lebih cepat mencari resep dengan menu favorit.</p>
+            </div>
+        </div>
+
+    <hr class="hr-style">
 
         <div class="info">
             <div class="info-item"><img src="img/home-info.png" alt="creative-cooking"></div>
