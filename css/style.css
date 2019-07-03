@@ -821,7 +821,7 @@ body {
     transition: 0.5s;
 }
 
-.recipe-detail .nav  i {
+.recipe-detail .nav i {
     width: 50px;
     height: 50px;
     background: #c0392b;
@@ -1207,11 +1207,13 @@ body {
     outline: none;
     transition: 0.5s;
 }
+
 #register button:hover {
     background: #e74c3c;
     color: #fff;
     transition: 0.5s;
 }
+
 #register button:hover p {
     color: #fff;
     transition: 0.5s;
@@ -1896,6 +1898,194 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 /* ---------- RESEP PAGE --------- */
 
+.ctg-slide {
+    background-color: #fff;
+    margin: 0 auto;
+    font-weight: 900;
+}
+
+.ctg-outer {
+    border: black 0.5px;
+    font-weight: 900;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ctg-inner {
+    list-style: none;
+    margin: 0;
+    padding: 0 22px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border: solid 0.5px #e5e7e9;
+    border-radius: 10px;
+}
+
+.ctg-inner li {
+    width: 70px;
+    margin-left: 22px;
+    margin-top: 10px;
+    height: 120px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    transition: 0.2s;
+}
+
+.ctg-inner li :hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.ctg-inner li a img {
+    margin: 0;
+    display: inline-block;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.ctg-inner li label {
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 10pt;
+}
+
+.ctg-slide .kiri {
+    margin-left: 20px;
+    position: absolute;
+    font-size: 55pt;
+    height: 100px;
+    color: #e74c3c;
+}
+
+.ctg-slide .kiri:hover {
+    color: #c0392b;
+    cursor: pointer;
+}
+
+.ctg-slide .kanan {
+    margin-right: 20px;
+    font-size: 55pt;
+    float: right;
+    color: #e74c3c;
+}
+
+.ctg-slide .kanan:hover {
+    color: #c0392b;
+    cursor: pointer;
+}
+
+.rsp-title {
+    background-color: #fff;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.rsp-title h1 {
+    margin-left: 50px;
+    position: relative;
+    font-weight: 300;
+}
+
+.rsp-content {
+    background-color: #fff;
+    font-weight: 900;
+    margin: 0 auto;
+    height: auto;
+    min-height: 350px;
+    width: 100%;
+}
+
+.rsp-outer {
+    border-radius: 10px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 50px;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+
+.rsp-inner {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0.8% 1%;
+    transition: all 0.5s;
+}
+
+.rsp-inner:hover {
+    box-shadow: 1px 1px 2px 2px #bbbbbb;
+}
+
+.rsp-box {
+    position: relative;
+}
+
+.rsp-box a {
+    text-decoration: none!important;
+    color: #000;
+    font-weight: 500;
+}
+
+.rsp-star {
+    position: absolute;
+    top: 0;
+    background: #e74c3c;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    border-radius: 50%;
+    margin: 2px;
+    z-index: 1;
+    font-weight: 500;
+}
+
+a .rsp-item {
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
+    transition: box-shadow 0.25s;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.rsp-img {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.rsp-caption {
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.rsp-caption h4 {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 0;
+    font-weight: 550;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 11pt;
+}
+
 
 /* ---------- END RESEP PAGE --------- */
 
@@ -1909,6 +2099,7 @@ input#img-4:checked~.dots label#img-dot-4 {
 #help-page {
     margin-top: -20px;
 }
+
 
 /* Slideshow */
 
@@ -2040,6 +2231,7 @@ input#img-4:checked~.dots label#img-dot-4 {
     text-decoration: none;
     color: rgb(104, 104, 104);
 }
+
 #help-page .sub-help-category ul li a:hover {
     text-decoration: underline;
 }
@@ -2070,7 +2262,6 @@ input#img-4:checked~.dots label#img-dot-4 {
     color: #e74c3c;
 }
 
-
 #help-page .bot-footer .container-foot {
     width: 100%;
     background-image: url("../img/footer.png");
@@ -2079,7 +2270,9 @@ input#img-4:checked~.dots label#img-dot-4 {
     text-align: center;
     padding: 15px 0 25px 0;
 }
-#help-page .bot-footer .container-foot h3, #help-page .bot-footer .container-foot i {
+
+#help-page .bot-footer .container-foot h3,
+#help-page .bot-footer .container-foot i {
     color: white;
 }
 
@@ -2087,6 +2280,7 @@ input#img-4:checked~.dots label#img-dot-4 {
     font-weight: 400;
     padding: 5px 0;
 }
+
 #help-page .bot-footer {
     margin-bottom: -32px;
 }
@@ -2218,6 +2412,7 @@ input#img-4:checked~.dots label#img-dot-4 {
 #contact .fab:hover {
     color: #fff;
 }
+
 
 /* ---------- End Contact Page--------- */
 

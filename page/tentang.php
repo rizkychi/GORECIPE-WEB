@@ -124,7 +124,7 @@
                     </div>
                     <div class="tim1">
                         <div class="foto">
-                            <img src="img/tentang/tim-ima.jpg" width="190px" height="240px" alt="icon">
+                            <img src="img/tentang/tim-awa.jpg" width="190px" height="240px" alt="icon">
                             <div class="bayangan">
                                 <div class="sosial">
                                     <ul>
