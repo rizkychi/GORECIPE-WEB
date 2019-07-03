@@ -1,7 +1,8 @@
 
     
 <div id="help-page">
-        <!-- Slideshow -->
+
+    <!-- Slideshow -->
 
     <div class="slideshow-container">
         <div class="mySlides fade">
@@ -24,6 +25,18 @@
     </div>
 
     <!-- End Slideshow -->
+
+    <section class="announcements">
+        <ul>
+            <li class="announcement">
+                <a href="#">4 Juli 2019 : Kategori resep hadir lebih banyak dan dengan tampilan baru</a>
+            </li>
+            <li class="announcement">
+                <a href="#">30 Juni 2019 : Error saat menambah resep favorit [Resolved]</a>
+            </li>
+        </ul>
+    </section>
+
     <!-- 1 -->
     <div id="your-account" class="help-space">
         <div class="row">
