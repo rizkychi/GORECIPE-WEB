@@ -1518,8 +1518,8 @@ input:checked+.slide-container .slide-nav label {
     margin: 0 auto;
     width: 1080px;
     height: 100%;
-    -webkit-filter: brightness(50%);
-    filter: brightness(50%);
+    -webkit-filter: brightness(90%);
+    filter: brightness(90%);
 }
 
 input:checked+.slide-container .slide {
