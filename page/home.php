@@ -6,7 +6,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 1" src="img/banner1.jpg">
+                <img alt="banner 1" src="img/slide1.jpg">
             </div>
 
             <div class="slide-nav">
@@ -21,7 +21,11 @@
         <li class="slide-container">
 
             <div class="slide">
+<<<<<<< HEAD
                 <img alt="banner 2" src="img/banner2.jpg">
+=======
+                <img alt="banner 2" src="img/slide2.jpg">
+>>>>>>> 8be9b7563449b5a1a22ef7a4955692f46a88a425
             </div>
 
             <div class="slide-nav">
@@ -36,7 +40,11 @@
         <li class="slide-container">
 
             <div class="slide">
+<<<<<<< HEAD
                 <img alt="banner 3" src="img/banner3.jpg">
+=======
+                <img alt="banner 3" src="img/slide3.jpg">
+>>>>>>> 8be9b7563449b5a1a22ef7a4955692f46a88a425
             </div>
 
             <div class="slide-nav">
@@ -51,7 +59,11 @@
         <li class="slide-container">
 
             <div class="slide">
+<<<<<<< HEAD
                 <img alt="banner 4" src="img/banner4.jpg">
+=======
+                <img alt="banner 4" src="img/artikel/terbaru-3.jpg">
+>>>>>>> 8be9b7563449b5a1a22ef7a4955692f46a88a425
             </div>
 
             <div class="slide-nav">
