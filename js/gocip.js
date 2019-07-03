@@ -156,14 +156,14 @@ $(document).ready(function() {
     //--------- RESEP ----------//
 
     $('#kanan-btn').click(function() {
-        event.preventDefault();
+
         $('#ctg-content').animate({
             scrollLeft: "+=100px"
         }, "medium");
     });
 
     $('#kiri-btn').click(function() {
-        event.preventDefault();
+
         $('#ctg-content').animate({
             scrollLeft: "-=100px"
         }, "medium");
