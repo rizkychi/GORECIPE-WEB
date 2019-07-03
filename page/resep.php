@@ -92,7 +92,7 @@
     </div>
 
     <div class="rsp-title">
-        <h1>ALL</h1>
+        <h1>Semua Resep</h1>
 
     </div>
 

@@ -187,6 +187,14 @@ $(document).ready(function() {
             $("span", this).animate({ 'width': 'toggle' }, 350);
         });
     }
+
+    $(window).on("scroll",function(){
+        if ($(window).scrollTop() > 150){
+            $(".recipe-detail .nav").addClass("scrolled");
+        } else {
+            $(".recipe-detail .nav").removeClass("scrolled");
+        }
+    });
     // ---------- End Sub Nav Detail Recipe Page ---------- //
 });
 // ----------------- Article Slideshow -------------- //

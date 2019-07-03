@@ -80,6 +80,7 @@ body {
 
 .container {
     max-width: 1080px;
+    min-width: 1080px;
     margin: 0 auto;
 }
 
@@ -969,6 +970,13 @@ body {
     font-weight: 500;
     line-height: 2.5;
     background: rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+#detail-recipe .cat-banner h2:hover {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 #detail-recipe .cat-banner h2 a {
@@ -1601,6 +1609,11 @@ body {
     color: #fff;
     text-align: center;
     font-size: 156pt;
+    -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer */
+   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
 .slide:hover+.slide-nav label {
