@@ -1742,56 +1742,186 @@ input#img-4:checked~.dots label#img-dot-4 {
 
 /* ---------- RESEP PAGE --------- */
 
-.coba {
+.ctg-slide {
     background-color: #fff;
     margin: 0 auto;
     font-weight: 900;
 }
 
-.coba1 {
-    background-color: lightgreen;
+.ctg-outer {
+    border: black 0.5px;
     font-weight: 900;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.coba-box {
+.ctg-inner {
     list-style: none;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    justify-content: center;
     margin: 0;
-    padding: 0;
-}
-
-.coba-box li {
-    margin: 5px;
-    width: 100px;
-    height: 100px;
-    position: relative;
+    padding: 0 22px 0 0;
+    white-space: nowrap;
     overflow: hidden;
-    border-radius: 50%;
+    border: solid 0.5px #e5e7e9;
+    border-radius: 10px;
 }
 
-.coba-box li a {
+.ctg-inner li {
+    width: 70px;
+    margin-left: 22px;
+    margin-top: 10px;
+    height: 120px;
+    display: inline-block;
     text-decoration: none;
-    overflow: hidden;
+    position: relative;
 }
 
-.coba-box li a img {
+.ctg-inner li a img {
+    margin: 0;
+    display: inline-block;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.ctg-inner li label {
     display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 10pt;
+}
+
+.ctg-slide .kiri {
+    margin-left: 20px;
+    position: absolute;
+    font-size: 55pt;
+    height: 100px;
+    opacity: 0;
+}
+
+.ctg-slide .kiri:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ctg-slide .kanan {
+    margin-right: 20px;
+    font-size: 55pt;
+    float: right;
+    opacity: 0;
+}
+
+.ctg-slide .kanan:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.rsp-title {
+    background-color: #fff;
+    margin: 0 auto;
+    height: auto;
     width: 100%;
-    height: 100%;
-    transition: 0.5s;
 }
 
-.coba-box li h4 {
-    display: block;
+.rsp-title h1 {
+    margin-left: 50px;
+    position: relative;
+    font-weight: 300;
+}
+
+.rsp-content {
+    background-color: #fff;
+    font-weight: 900;
+    margin: 0 auto;
+    height: auto;
+    min-height: 350px;
+    width: 100%;
+}
+
+.rsp-outer {
+    border-radius: 10px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 50px;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+
+.rsp-inner {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0.8% 1%;
+    transition: all 0.5s;
+}
+
+.rsp-inner:hover {
+    box-shadow: 1px 1px 2px 2px #bbbbbb;
+}
+
+.rsp-box {
+    position: relative;
+}
+
+.rsp-box a {
+    text-decoration: none!important;
+    color: #000;
+    font-weight: 500;
+}
+
+.rsp-star {
+    position: absolute;
+    top: 0;
+    background: #e74c3c;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    border-radius: 50%;
+    margin: 2px;
+    z-index: 1;
+    font-weight: 500;
+}
+
+a .rsp-item {
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
+    transition: box-shadow 0.25s;
     overflow: hidden;
+    border-radius: 5px;
+}
+
+.rsp-img {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.rsp-caption {
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.rsp-caption h4 {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 0;
+    font-weight: 550;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 11pt;
 }
 
 
