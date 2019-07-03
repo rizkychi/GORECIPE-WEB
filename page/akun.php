@@ -149,7 +149,7 @@
                         </div>
                     </div>
                     <div class="fav-item">
-                        <img src="img/recipe/oatpancakeluar.jpg" alt="Oat Pancake">
+                        <img src="img/recipe/oat-pancake.jpg" alt="Oat Pancake">
                         <div class="fav-caption">
                             <a href="?p=detail_resep&r=oat-pancake">Oat Pancake</a>
                         </div>
