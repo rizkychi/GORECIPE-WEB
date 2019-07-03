@@ -145,7 +145,7 @@
                             <h4>BACEM CEKER</h4>
                         </div>
                         <div class="rsp-star">
-                            5
+                            4
                         </div>
                     </a>
                 </div>
@@ -177,7 +177,7 @@
                             <h4>KEMBUNG GORENG KREMES</h4>
                         </div>
                         <div class="rsp-star">
-                            2.8
+                            4.5
                         </div>
                     </a>
                 </div>
@@ -209,7 +209,7 @@
                             <h4>OAT PANCAKE</h4>
                         </div>
                         <div class="rsp-star">
-                            5
+                            4
                         </div>
                     </a>
                 </div>
@@ -225,7 +225,7 @@
                             <h4>SEBLAK CREAMY MIE BAKSO</h4>
                         </div>
                         <div class="rsp-star">
-                            3
+                            4.6
                         </div>
                     </a>
                 </div>
