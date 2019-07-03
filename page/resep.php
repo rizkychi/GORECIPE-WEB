@@ -136,7 +136,7 @@
             </div>
             <div class="rsp-inner">
                 <div class="rsp-box">
-                    <a href="#">
+                    <a href="?p=detail_resep&amp;r=bacem-ceker">
                         <div class="rsp-item">
                             <img class="rsp-img" src="img/recipe/bacem-ceker.jpg" alt="">
                         </div>
@@ -152,13 +152,13 @@
             </div>
             <div class="rsp-inner">
                 <div class="rsp-box">
-                    <a href="#">
+                    <a href="?p=detail_resep&amp;r=gudeg">
                         <div class="rsp-item">
                             <img class="rsp-img" src="img/recipe/gudeg.jpg" alt="">
                         </div>
 
                         <div class="rsp-caption">
-                            <h4>GUDEG</h4>
+                            <h4>GUDEG KERING KHAS YOGYAKARTA</h4>
                         </div>
                         <div class="rsp-star">
                             4.5
@@ -168,13 +168,13 @@
             </div>
             <div class="rsp-inner">
                 <div class="rsp-box">
-                    <a href="#">
+                    <a href="?p=detail_resep&amp;r=kembung-goreng-kremes ">
                         <div class="rsp-item">
-                            <img class="rsp-img" src="img/recipe/kroket-tahu.jpg" alt="">
+                            <img class="rsp-img" src="img/recipe/kembung-goreng-kremes.jpg" alt="">
                         </div>
 
                         <div class="rsp-caption">
-                            <h4>COOKIES CHOCO PANDAN</h4>
+                            <h4>KEMBUNG GORENG KREMES</h4>
                         </div>
                         <div class="rsp-star">
                             2.8
@@ -184,13 +184,13 @@
             </div>
             <div class="rsp-inner">
                 <div class="rsp-box">
-                    <a href="#">
+                    <a href="?p=detail_resep&amp;r=cookies-choco-pandan">
                         <div class="rsp-item">
                             <img class="rsp-img" src="img/recipe/cookies-choco-pandan.jpg" alt="">
                         </div>
 
                         <div class="rsp-caption">
-                            <h4>KEMBUNG GORENG KREMES</h4>
+                            <h4>COOKIES CHOCO PANDAN</h4>
                         </div>
                         <div class="rsp-star">
                             3.5
@@ -200,7 +200,7 @@
             </div>
             <div class="rsp-inner">
                 <div class="rsp-box">
-                    <a href="#">
+                    <a href="?p=detail_resep&amp;r=oat-pancake">
                         <div class="rsp-item">
                             <img class="rsp-img" src="img/recipe/oatpancakeluar.jpg" alt="">
                         </div>
@@ -216,7 +216,7 @@
             </div>
             <div class="rsp-inner">
                 <div class="rsp-box">
-                    <a href="#">
+                    <a href="?p=detail_resep&amp;r=seblak-creamy-mie-bakso">
                         <div class="rsp-item">
                             <img class="rsp-img" src="img/recipe/seblak-creamy-mie-bakso.jpg" alt="">
                         </div>
@@ -232,7 +232,7 @@
             </div>
             <div class="rsp-inner">
                 <div class="rsp-box">
-                    <a href="#">
+                    <a href="?p=detail_resep&amp;r=oat-pancake">
                         <div class="rsp-item">
                             <img class="rsp-img" src="img/minum.jpg" alt="">
                         </div>
