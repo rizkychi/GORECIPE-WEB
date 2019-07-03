@@ -202,7 +202,7 @@
                 <div class="rsp-box">
                     <a href="?p=detail_resep&amp;r=oat-pancake">
                         <div class="rsp-item">
-                            <img class="rsp-img" src="img/recipe/oatpancakeluar.jpg" alt="">
+                            <img class="rsp-img" src="img/recipe/oat-pancake.jpg" alt="">
                         </div>
 
                         <div class="rsp-caption">
