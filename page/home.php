@@ -6,7 +6,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 1" src="img/slide1.jpg">
+                <img alt="banner 1" src="img/banner1.jpg">
             </div>
 
             <div class="slide-nav">
