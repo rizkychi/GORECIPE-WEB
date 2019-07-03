@@ -21,7 +21,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 2" src="img/img_nature_wide.jpg">
+                <img alt="banner 2" src="img/banner2.jpg">
             </div>
 
             <div class="slide-nav">
@@ -36,7 +36,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 3" src="img/img_snow_wide.jpg">
+                <img alt="banner 3" src="img/banner3.jpg">
             </div>
 
             <div class="slide-nav">
@@ -51,7 +51,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 4" src="img/img_nature_spring_forest.jpg">
+                <img alt="banner 4" src="img/banner4.jpg">
             </div>
 
             <div class="slide-nav">
