@@ -6,7 +6,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 1" src="img/banner_1.jpg">
+                <img alt="banner 1" src="img/banner1.jpg">
             </div>
 
             <div class="slide-nav">
@@ -21,7 +21,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 2" src="img/banner_2.jpg">
+                <img alt="banner 2" src="img/banner2.jpg">
             </div>
 
             <div class="slide-nav">
@@ -36,7 +36,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 3" src="img/banner_3.jpg">
+                <img alt="banner 3" src="img/banner3.jpg">
             </div>
 
             <div class="slide-nav">
@@ -51,7 +51,7 @@
         <li class="slide-container">
 
             <div class="slide">
-                <img alt="banner 4" src="img/banner_4.jpg">
+                <img alt="banner 4" src="img/banner4.jpg">
             </div>
 
             <div class="slide-nav">
