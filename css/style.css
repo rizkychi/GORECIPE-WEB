@@ -1613,10 +1613,12 @@ body {
 
 .slide-nav .next {
     right: 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
 
 .slide-nav .prev {
     left: 0;
+    background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
 
 input:checked+.slide-container .slide-nav label {
