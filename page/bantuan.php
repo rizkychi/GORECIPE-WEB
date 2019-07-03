@@ -18,7 +18,7 @@
     
     <!-- Search -->
     <form class="search-box" action="/action_page.php" style="margin: auto; width:600px;">
-        <input type="text" placeholder="Search.." name="search">
+        <input type="text" placeholder="Cari.." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
     </form>
     </div>
@@ -28,53 +28,53 @@
     <div id="your-account" class="help-space">
         <div class="row">
             <div class="help-category">
-                <h1>Your Account</h1>
+                <h1>Akun Anda</h1>
             </div>
 
             <div class="sub-help-category">
-                <h4><i class='fas fa-cogs'></i> Account Management</h4><hr>
+                <h4><i class='fas fa-cogs'></i> Pengelolaan Akun</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Resetting your password</a>
+                        <a href="#">Mengatur ulang kata sandi</a>
                     </li><hr>
                     <li>
-                        <a href="#">Managing your email address</a>
+                        <a href="#">Mengelola alamat email</a>
                     </li><hr>
                     <li>
-                        <a href="#">Deleting your account or blog</a>
+                        <a href="#">Menghapus akun</a>
                     </li><hr>
                     <li>
-                        <a href="#">Email verification</a>
+                        <a href="#">Verifikasi email</a>
                     </li><hr>
                     <li>
-                        <a href="#">Email troubleshooting</a>
+                        <a href="#">Pemecahan masalah email</a>
                     </li><hr>
                     <li>
-                        <a href="#">Email notification</a>
+                        <a href="#">Notifikasi email</a>
                     </li><hr>
                     <li>
-                        <a href="#">Account language</a>
+                        <a href="#">Bahasa akun</a>
                     </li><hr>
                 </ul>
             </div>
 
             <div class="sub-help-category">
-                <h4><i class='fas fa-user'></i> Blog Management</h4><hr>
+                <h4><i class='fas fa-heart'></i> Pengelolaan Favorit</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Export your blog</a>
+                        <a href="#">Ekspor resep</a>
                     </li><hr>
                     <li>
-                        <a href="#">Group Blogs</a>
+                        <a href="#">Resep Favorit</a>
                     </li><hr>
                     <li>
-                        <a href="#">Password-protected blog</a>
+                        <a href="#">Menghapus resep favorit</a>
                     </li><hr>
                     <li>
-                        <a href="#">Secondary blogs</a>
+                        <a href="#">Menambah resep favorit</a>
                     </li><hr>
                     <li>
-                        <a href="#">Time zones</a>
+                        <a href="#">Privasi</a>
                     </li><hr>
                 </ul>
             </div>
@@ -87,46 +87,46 @@
             </div>
 
             <div class="sub-help-category">
-                <h4><i class='fas fa-lock'></i> Account Security</h4><hr>
+                <h4><i class='fas fa-lock'></i> Keamanan Akun</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Protecting your account</a>
+                        <a href="#">Melindungi akun</a>
                     </li><hr>
                     <li>
-                        <a href="#">Account activity</a>
+                        <a href="#">Aktivitas akun</a>
                     </li><hr>
                     <li>
-                        <a href="#">Compromised accounts</a>
+                        <a href="#">Akun diretas</a>
                     </li><hr>
                     <li>
-                        <a href="#">Two-factor authentication</a>
+                        <a href="#">Otentikasi Dua Faktor</a>
                     </li><hr>
                     <li>
-                        <a href="#">Privacy options</a>
+                        <a href="#">Opsi privasi</a>
                     </li><hr>
                     <li>
-                        <a href="#">Application access</a>
+                        <a href="#">Akses aplikasi</a>
                     </li><hr>
                     <li>
-                        <a href="#">Encryption</a>
+                        <a href="#">Enkripsi</a>
                     </li><hr>
                 </ul>
             </div>
 
             <div class="sub-help-category">
-                <h4><i class='fas fa-fax'></i> URLs & custom domain</h4><hr>
+                <h4><i class='fas fa-fax'></i> URLs & domain kustom</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Changing your username / URL</a>
+                        <a href="#">Mengubah nama pengguna/URL</a>
                     </li><hr>
                     <li>
-                        <a href="#">Unavailable / inactive URLs</a>
+                        <a href="#">URL tak tersedia/tak aktif</a>
                     </li><hr>
                     <li>
-                        <a href="#">Custom domains</a>
+                        <a href="#">Domain kustom</a>
                     </li><hr>
                     <li>
-                        <a href="#">Two-factor authentication</a>
+                        <a href="#">Otentikasi Dua Faktor</a>
                     </li><hr>
                 </ul>
             </div>
@@ -140,16 +140,16 @@
             </div>
 
             <div class="sub-help-category">
-                <h4><i class='fas fa-sync'></i> Integrations</h4><hr>
+                <h4><i class='fas fa-sync'></i> Integrasi</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Coneccting to twitter</a>
+                        <a href="#">Menghubungkan dengan Twitter</a>
                     </li><hr>
                     <li>
-                        <a href="#">Coneccting to instagram</a>
+                        <a href="#">Menghubungkan dengan Instagram</a>
                     </li><hr>
                     <li>
-                        <a href="#">Coneccting to facebook</a>
+                        <a href="#">Menghubungkan dengan Facebook</a>
                     </li><hr>
                 </ul>
             </div>
@@ -165,41 +165,41 @@
     <div id="search-discover" class="help-space">
         <div class="row">
             <div class="help-category">
-                <h1>Search and discovery</h1>
+                <h1>Pencarian dan Penjelajahan</h1>
             </div>
 
             <div class="sub-help-category">
-                <h4><i class='fas fa-search'></i> Search</h4><hr>
+                <h4><i class='fas fa-search'></i> Pencarian</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Search and filtering basics</a>
+                        <a href="#">Dasar-dasar pencarian dan penyaringan</a>
                     </li><hr>
                     <li>
-                        <a href="#">Search for multiple tags or terms</a>
+                        <a href="#">Mencari tagar atau istilah ganda</a>
                     </li><hr>
                     <li>
-                        <a href="#">Search for posts within a specific blog</a>
+                        <a href="#">Mencari posting dalam blog tertentu</a>
                     </li><hr>
                     <li>
-                        <a href="#">Appearing in search results</a>
+                        <a href="#">Kemunculan di hasil pencarian</a>
                     </li><hr>
                 </ul>
             </div>
 
             <div class="sub-help-category">
-                <h4><i class='fas fa-hashtag'></i> Tags</h4><hr>
+                <h4><i class='fas fa-hashtag'></i> Tagar</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Tagging your posts</a>
+                        <a href="#">Tagar pada artikel</a>
                     </li><hr>
                     <li>
-                        <a href="#">Organizing with tags</a>
+                        <a href="#">Mengelompokkan dengan tagar</a>
                     </li><hr>
                     <li>
-                        <a href="#">Tag filtering</a>
+                        <a href="#">Pemfilteran tagar</a>
                     </li><hr>
                     <li>
-                        <a href="#">Troubleshooting tags</a>
+                        <a href="#">Pemecahan masalah tagar</a>
                     </li><hr>
                 </ul>
             </div>
@@ -211,22 +211,22 @@
             </div>
 
             <div class="sub-help-category">
-                <h4><i class='fas fa-compass'></i> Discovery</h4><hr>
+                <h4><i class='fas fa-compass'></i> Penjelajahan</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Recommendations</a>
+                        <a href="#">Resep Rekomendasi</a>
                     </li><hr>
                     <li>
-                        <a href="#">Dashboard preferences</a>
+                        <a href="#">Preferensi dasbor</a>
                     </li><hr>
                     <li>
-                        <a href="#">Top Posts</a>
+                        <a href="#">Artikel Teratas</a>
                     </li><hr>
                     <li>
-                        <a href="#">Lesser-known features</a>
+                        <a href="#">Fitur yang jarang diketahui</a>
                     </li><hr>
                     <li>
-                        <a href="#">Embed basics</a>
+                        <a href="#">Dasar-dasar sematan</a>
                     </li><hr>
                 </ul>
             </div>
@@ -242,38 +242,38 @@
     <div id="posting" class="help-space">
         <div class="row">
             <div class="help-category">
-                <h1>Posting</h1>
+                <h1>Komentar</h1>
             </div>
 
             <div class="sub-help-category">
-                <h4>Posting basics</h4><hr>
+                <h4>Dasar-dasar komentar</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Making a post</a>
+                        <a href="#">Membuat komentar</a>
                     </li><hr>
                     <li>
-                        <a href="#">Deleting a post</a>
+                        <a href="#">Menghapus komentar</a>
                     </li><hr>
                     <li>
-                        <a href="#">Reblogs</a>
+                        <a href="#">Membalas komentar</a>
                     </li><hr>
                 </ul>
             </div>
 
             <div class="sub-help-category">
-                <h4>Post types</h4><hr>
+                <h4>Jenis Komentar</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Text post</a>
+                        <a href="#">Komentar teks</a>
                     </li><hr>
                     <li>
-                        <a href="#">Image post</a>
+                        <a href="#">Komentar foto</a>
                     </li><hr>
                     <li>
-                        <a href="#">Video post</a>
+                        <a href="#">Komentar Video</a>
                     </li><hr>
                     <li>
-                        <a href="#">Image troubleshooting</a>
+                        <a href="#">Pemecahan masalah gambar</a>
                     </li><hr>
                 </ul>
             </div>
@@ -285,25 +285,25 @@
             </div>
 
             <div class="sub-help-category">
-                <h4>Post options</h4><hr>
+                <h4>Opsi Komentar</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Post editor</a>
+                        <a href="#">Editor komentar</a>
                     </li><hr>
                     <li>
-                        <a href="#">Drafts</a>
+                        <a href="#">Draf</a>
                     </li><hr>
                     <li>
-                        <a href="#">Queued posts</a>
+                        <a href="#">Antrean komentar</a>
                     </li><hr>
                     <li>
-                        <a href="#">Scheduled posts</a>
+                        <a href="#">Komentar terjadwal</a>
                     </li><hr>
                     <li>
-                        <a href="#">Sharing a post</a>
+                        <a href="#">Bagikan Artikel</a>
                     </li><hr>
                     <li>
-                        <a href="#">More post options</a>
+                        <a href="#">Opsi komentar lain</a>
                     </li><hr>
                 </ul>
             </div>
@@ -319,38 +319,38 @@
     <div id="community" class="help-space">
         <div class="row">
             <div class="help-category">
-                <h1>Community</h1>
+                <h1>Komunitas</h1>
             </div>
 
             <div class="sub-help-category">
-                <h4>Social features</h4><hr>
+                <h4>Fitur Sosial</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Messaging</a>
+                        <a href="#">Perpesanan</a>
                     </li><hr>
                     <li>
-                        <a href="#">Replies</a>
+                        <a href="#">Balasan</a>
                     </li><hr>
                     <li>
-                        <a href="#">Follow</a>
+                        <a href="#">Ikuti</a>
                     </li><hr>
                     <li>
-                        <a href="#">Submit</a>
+                        <a href="#">Kiriman</a>
                     </li><hr>
                     <li>
-                        <a href="#">Blocking user</a>
+                        <a href="#">Memblokir pengguna</a>
                     </li><hr>
                 </ul>
             </div>
 
             <div class="sub-help-category">
-                <h4>Reporting Content</h4><hr>
+                <h4>Pelaporan konten</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Reporting offensive content</a>
+                        <a href="#">Melaporkan konten yang menyinggung</a>
                     </li><hr>
                     <li>
-                        <a href="#">Reporting spam</a>
+                        <a href="#">Melaporkan spam</a>
                 </ul>
             </div>
         </div>
@@ -361,22 +361,22 @@
             </div>
 
             <div class="sub-help-category">
-                <h4>Counseling and prevention</h4><hr>
+                <h4>Konseling dan pencegahan</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Counseling and prevention resources</a>
+                        <a href="#">Sumber konseling dan pencegahan</a>
                     </li><hr>
                 </ul>
             </div>
 
             <div class="sub-help-category">
-                <h4>Adult Content</h4><hr>
+                <h4>Konten Dewasa</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Adult content</a>
+                        <a href="#">Konten Dewasa</a>
                     </li><hr>
                     <li>
-                        <a href="#">Reviewing and appealing content flagged as adult</a>
+                        <a href="#">Meninjau dan meminta peninjauan ulang konten yang ditandai bermuatan dewasa</a>
                     </li><hr>
                 </ul>
             </div>
@@ -389,44 +389,44 @@
     <div id="policy" class="help-space">
         <div class="row">
             <div class="help-category">
-                <h1>Policy</h1>
+                <h1>Kebijakan</h1>
             </div>
 
             <div class="sub-help-category">
-                <h4>Community and content policies </h4><hr>
+                <h4>Kebijakan komunitas dan konten </h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Your Age on Go-Recipe</a>
+                        <a href="#">Usiamu Go-Recipe</a>
                     </li><hr>
                     <li>
-                        <a href="#">Community Guidelines</a>
+                        <a href="#">Pedoman Komunitas</a>
                     </li><hr>
                     <li>
-                        <a href="#">Privacy Policy</a>
+                        <a href="#">Kebijakan Privasi</a>
                     </li><hr>
                     <li>
-                        <a href="#">Terms of Service</a>
+                        <a href="#">Ketentuan Layanan</a>
                     </li><hr>
                     <li>
-                        <a href="#">Law Enforcement Guidelines</a>
+                        <a href="#">Pedoman Merek Dagang</a>
                     </li><hr>
                 </ul>
             </div>
 
             <div class="sub-help-category">
-                <h4>Advertising and affiliate policies</h4><hr>
+                <h4>Kebijakan periklanan dan afiliasi</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Go-Recipe ads and you</a>
+                        <a href="#">Iklan Go-Recipe</a>
                     </li><hr>
                     <li>
-                        <a href="#">Global Advertising Policy</a>
+                        <a href="#">Kebijakan Periklanan Global</a>
                     </li><hr>
                     <li>
-                        <a href="#">On-blog advertising</a>
+                        <a href="#">Periklanan pada artikel atau resep</a>
                     </li><hr>
                     <li>
-                        <a href="#">How affiliate links work on Go-Recipe</a>
+                        <a href="#">Cara kerja tautan afiliasi di Go-Recipe</a>
                     </li><hr>
                 </ul>
             </div>
@@ -438,20 +438,20 @@
     <div id="more" class="help-space">
         <div class="row">
             <div class="help-category">
-                <h1>More</h1>
+                <h1>Lainnya</h1>
             </div>
 
             <div class="sub-help-category">
-                <h4>Misc</h4><hr>
+                <h4>Dll</h4><hr>
                 <ul>
                     <li>
-                        <a href="#">Frequently asked questions</a>
+                        <a href="#">Pertanyaan yang sering diajukan</a>
                     </li><hr>
                     <li>
-                        <a href="#">Feature requests</a>
+                        <a href="#">Permintaan fitur</a>
                     </li><hr>
                     <li>
-                        <a href="#">Privacy Policy</a>
+                        <a href="#">Permintaan resep</a>
                     </li><hr>
                     <li>
                         <a href="#">Merchandise</a>
@@ -468,8 +468,8 @@
 
     <div class="bot-footer">
         <div class="container-foot">
-            <h3>Need more help?</h3>
-            <button type="submit"><i class='fas fa-phone'></i> Contact Us</button>
+            <h3>Butuh Bantuan Lebih Lanjut?</h3>
+            <button type="submit"><i class='fas fa-phone'></i> Hubungi kami</button>
         </div>
     </div>
     <!-- Footer -->
@@ -482,12 +482,12 @@
         help_nav =  '<div class="help-nav">'+
                         '<div class="container">'+
                             '<ul class="help-menu">'+
-                                '<li><a href="#your-account">Your Account</a></li>'+
-                                '<li><a href="#search-discover">Search and Discovery</a></li>'+
-                                '<li><a href="#posting">Posting</a></li>'+
-                                '<li><a href="#community">Community</a></li>'+
-                                '<li><a href="#policy">Policy</a></li>'+
-                                '<li><a href="#more">More</a></li>'+
+                                '<li><a href="#your-account">Akun Anda</a></li>'+
+                                '<li><a href="#search-discover">Pencarian dan Penjelajahan</a></li>'+
+                                '<li><a href="#posting">Komentar</a></li>'+
+                                '<li><a href="#community">Komunitas</a></li>'+
+                                '<li><a href="#policy">Kebijakan</a></li>'+
+                                '<li><a href="#more">Lainnya</a></li>'+
                             '</ul>'+
                         '</div>'+
                     '</div>'
