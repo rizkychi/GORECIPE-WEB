@@ -232,7 +232,7 @@
             </div>
             <div class="rsp-inner">
                 <div class="rsp-box">
-                    <a href="?p=detail_resep&amp;r=oat-pancake">
+                    <a href="#">
                         <div class="rsp-item">
                             <img class="rsp-img" src="img/minum.jpg" alt="">
                         </div>
