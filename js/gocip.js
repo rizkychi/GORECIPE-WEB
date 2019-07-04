@@ -249,3 +249,18 @@ function showSlides() {
     setTimeout(showSlides, 5000);
 }
 // ----------------- End Slideshow ----------------- //
+
+// ---------------- Zoom Article ------------------ //
+    $(document).ready(function(){
+        $('#ext1').zoom();
+    });
+    $(document).ready(function(){
+        $('#ext2').zoom();
+    });
+    $(document).ready(function(){
+        $('#ext3').zoom();
+    });
+    $(document).ready(function(){
+        $('#ext4').zoom();
+    });
+// ---------------- End Zoom Article --------------- //
