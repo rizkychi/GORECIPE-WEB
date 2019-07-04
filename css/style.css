@@ -2227,7 +2227,7 @@ a .rsp-item {
     margin-right: 50px;
     margin-left: 50px;
     border-radius: 3px;
-    background: url(../img/ann.png) 5px center no-repeat rgba(226, 226, 226, 0.671);
+    background: url(../img/ann.png) 5px no-repeat rgba(226, 226, 226, 0.671);
 }
 #help-page .announcements .announcement a{
     padding: 10px 60px;
