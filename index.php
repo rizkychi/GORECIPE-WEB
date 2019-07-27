@@ -71,14 +71,14 @@
                 </ul>
                 <div class="language-selector">
                     <div class="sub-menu" style="padding-right:0px">
-                        <a href="javascript:void(0);" id="language"><i class="fas fa-globe"></i>English (US)<i class="fas fa-angle-down" style="padding-left: 5px"></i></a>
+                        <a href="javascript:void(0);" id="language"><i class="fas fa-globe"></i>Indonesia<i class="fas fa-angle-down" style="padding-left: 5px"></i></a>
                     </div>
                     <div class="list-language">
                         <a href="#">Deutsch</a>
                         <a href="#">Español</a>
                         <a href="#">Français</a>
                         <a href="#">हिंदी</a>
-                        <a href="#">Bahasa Indonesia</a>
+                        <a href="#">English (US)</a>
                         <a href="#">Italiano</a>
                         <a href="#">日本語</a>
                         <a href="#">한국어</a>
