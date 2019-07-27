@@ -196,7 +196,6 @@
                 <a href="#" title="Instagram"><li><i class="fab fa-instagram"></i></li></a>
                 <a href="#" title="RSS"><li><i class="fas fa-rss"></i></li></a>
             </ul>
-            
         </div>
     </div>
 <!-- End Footer -->

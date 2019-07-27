@@ -17,8 +17,6 @@
         '1 bungkus Kobe Tepung Bakwan Kress (75gr)',
         '3 buah tahu putih ukuran sedang (kukus dan haluskan)',
         'minyak goreng secukupnya (untuk menggoreng)'
-
-
     );
     $method = array(
         'Panaskan minyak. Tumis daging ayam hingga berubah warna.',
@@ -28,6 +26,5 @@
         'Ambil adonan kulit secukupnya. Isi dengan isian dan bentuk bulat lonjong.',
         'Goreng dalam minyak panas hingga berwarna kuning kecoklatan. Tiriskan.',
         'Kroket Tahu siap disajikan selagi hangat.'
-
     );
 ?>
